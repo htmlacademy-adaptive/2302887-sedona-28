@@ -2,12 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Отзыв о Седоне, Аризона, США</title>
   </head>
 
   <body class="page__body">
-    <header class="main-header"
-      <a class="main-header__logo">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="main-header__nav main-nav">
@@ -16,29 +16,30 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list nav-list">
-            <li class="nav-list__item nav-list__item--current">
-              <a class="nav-list__link" href="#">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">
+              <a class="nav-list__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link"  href="#">
+            <li class="nav-list__item nav-list__item--current">
+              <a class="nav-list__link">
                 Форма отзыва
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link"  href="#">
+              <a class="nav-list__link"  href="https://htmlacademy.ru">
                 HTML Academy
               </a>
             </li>
+          </ul>
         </div>
       </nav>
-    </body>
+    </header>
 
     <main class="main">
       <section class="hero-form">
@@ -49,8 +50,7 @@
         <h2 class="feedbacks__title">Оставьте свой отзыв</h2>
         <p class="feedbacks__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
         <form class="feedbacks__form fieldsets" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="fieldsets__full-name full-name">
-            <h3 class="visually-hidden">Введите ФИО.</h3>
+            <fieldset class="fieldsets__full-name full-name">
             <legend class="full-name__title">Представьтесь:</legend>
             <ul class="full-name__list">
               <li class="full-name__item">
@@ -75,7 +75,6 @@
           </fieldset>
 
           <fieldset class="fieldsets__ contacts contacts">
-            <h3 class="visually-hidden">Введите свой телефон и e-mail.</h3>
             <legend class="contacts__title">Контактная информация:</legend>
             <ul class="contacts__list">
               <li class="contacts__item">
@@ -94,7 +93,6 @@
           </fieldset>
 
           <fieldset class="fieldsets__impressions impressions">
-            <h3 class="visually-hidden">Сообщите о ваших впечатлениях.</h3>
             <legend class="impressions__title">Ваше общее впечатление:</legend>
             <ul class="impressions__list">
               <li class="impressions__item">
@@ -123,8 +121,7 @@
 
           <fieldset class="fieldsets__sightseeing sightseeing">
             <legend class="sightseeing__title">Посещённые достопримечательности:</legend>
-            <h3 class="visually-hidden">Что вы увидели?</h3>
-            <ul class="sightseeing__list">
+              <ul class="sightseeing__list">
               <li class="sightseeing__item">
                 <label class="sightseeing__control">
                   <input class="sightseeing__control-input visually-hidden " type="checkbox" name="bridge" checked>
@@ -158,14 +155,13 @@
 
           <fieldset class="fieldsets__emotions emotions">
             <legend class="emotions__title">Опишите свои эмоции:</legend>
-            <h3 class="visually-hidden">Что вы почувствовали?</h3>
             <input class="emotions__field" type="text" placeholder="Опишите подробно все свои восторги" name="emotions">
           </fieldset>
 
           <button class="feedbacks__button" type="submit">Отправить отзыв</button>
           <p class="feedbacks__text">*-обязательные поля</p>
         </form>
-
+      </section>
     </main>
 
     <footer class="footer">      <h2 class="visually-hidden">Посетите Седону.</h2>

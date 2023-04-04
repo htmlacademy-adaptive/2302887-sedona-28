@@ -2,11 +2,11 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Красоты Седоны, Аризона, США.</title>
   </head>
 
   <body class="page__body">
-    <header class="main-header"
+    <header class="main-header">
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
@@ -22,23 +22,24 @@
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="#">
+              <a class="nav-list__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link"  href="#">
+              <a class="nav-list__link"  href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link"  href="#">
+              <a class="nav-list__link"  href="https://htmlacademy.ru">
                 HTML Academy
               </a>
             </li>
+          </ul>
         </div>
       </nav>
-    </body>
+    </header>
 
     <main class="main">
       <section class="hero-index">
@@ -57,20 +58,19 @@
             </div>
             <img class="advantages-block__image" src="/source/img/city.jpg" width="320" height="260" alt="Вид с террасы дома в Седоне.">
             <ul class="advantages-block__features features-list">
-                <li class="features-list__item features-item">
-                  <h4 class="features-item__title">Жильё </h4>
-                  <p class="features-item__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                </li>
-                  <li class="features-list__item features-item">
-                  <h4 class="features-item__title">Еда</h4>
-                  <p class="features-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="features-list__item features-item">
-                  <h4 class="features-item__title">Сувениры</h4>
-                  <p class="features-item__text">Не только китайского, но и местного производства!</p>
-                </li>
-              </ul>
-            </li>
+              <li class="features-list__item features-item features-item--home">
+                <h4 class="features-item__title">Жильё </h4>
+                <p class="features-item__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="features-list__item features-item features-item--food">
+                <h4 class="features-item__title">Еда</h4>
+                <p class="features-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="features-list__item features-item features-item--souvenirs">
+                <h4 class="features-item__title">Сувениры</h4>
+                <p class="features-item__text">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
           <li class="advantages-list__item advantages-list__item--picture advantages-block">
             <div class="advantages-block__wrapper">
               <h3 class="advantages-block__title">Там есть<br>мост дьявола</h3>
@@ -89,14 +89,14 @@
               <h3 class="advantages-block__title">Красивая дорога</h3>
               <p class="advantages-block__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
-            </li>
+          </li>
           <li class="advantages-list__item advantages-block">
             <div class="advantages-block__wrapper">
               <h3 class="advantages-block__title">Мало <br>туристов</h3>
               <p class="advantages-block__text">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
-        <ul/>
+        </ul>
       </section>
       <section class="search-hotel">
         <div class="search-hotel__wrapper" >
@@ -106,7 +106,8 @@
          </div>
       </section>
       <section class="map-mobile">
-        <img class="map-mobile__image" src="/source/img/map-mobile.jpg" width="320" height="350" alt="Карта окрестностей Седоны">
+        <h2 class="visually-hidden">Карта окрестностей Седоны</h2>
+        <img class="map-mobile__image" src="/source/img/map-mobile.jpg" width="320" height="350" alt="На карте окружающие города Финикс и Флагстафф национальные заповедники.">
       </section>
     </main>
 
