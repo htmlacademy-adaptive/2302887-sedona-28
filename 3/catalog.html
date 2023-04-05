@@ -48,32 +48,42 @@
         <img class="hero-catalog__title" src="img/sedona.svg" width="229" height="39" alt="Это Sedona.">
       </section>
       <section class="views">
-        <h2 class="visually-hidden">Виды Седоны</h2>
-        <p class="views__title">Фото и видео</p>
-        <p class="views__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="views__header header">
+          <h2 class="header__title">Фото и видео</h2>
+          <p class="header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
         <ul class="views__list content-list">
           <li class="content-list__item content-block">
-            <img class="content-block__image" src="img/photo-1-mobile.jpg.jpg" width="280" height="280" alt="Шоссе, вокруг чахлая растительность,на горизонте горы.">
+            <img class="content-block__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Шоссе, вокруг чахлая растительность,на горизонте горы.">
             <div class="content-block__wrapper">
               <h3 class="content-block__title">Неродные просторы</h3>
               <p class="content-block__text">Автор фото: борис</p>
-              <span class="content-block-likes">1350</span>
+              <a class="content-block__likes" href="#">
+                <img class="content-block__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
+                <span class="content-block__likes-quantity">1350</span>
+              </a>
             </div>
           </li>
           <li class="content-list__item content-block">
-            <img class="content-block__image" src="img/photo-2-mobile.jpg.jpg" width="280" height="280" alt="Местный кактус цветёт на фоне красных скал.">
+            <img class="content-block__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местный кактус цветёт на фоне красных скал.">
             <div class="content-block__wrapper">
               <h3 class="content-block__title">Местная растительность</h3>
               <p class="content-block__text">Автор фото: Сергей</p>
-              <span class="content-block-likes">145</span>
+              <a class="content-block__likes" href="#">
+                <img class="content-block__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
+                <span class="content-block__likes-quantity">145</span>
+              </a>
             </div>
           </li>
           <li class="content-list__item content-block">
-            <img class="content-block__image" src="img/photo-3-mobile.jpg.jpg" width="280" height="280" alt="Вид на горный серпантин на лесистом склоне.">
+            <img class="content-block__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Вид на горный серпантин на лесистом склоне.">
             <div class="content-block__wrapper">
               <h3 class="content-block__title">Дорога на север</h3>
               <p class="content-block__text">Автор фото: Пётр</p>
-              <span class="content-block-likes">96</span>
+              <a class="content-block__likes" href="#">
+                <img class="content-block__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
+                <span class="content-block__likes-quantity">96</span>
+              </a>
             </div>
           </li>
           <li class="content-list__item content-block">
@@ -81,24 +91,28 @@
             <div class="content-block__wrapper">
               <h3 class="content-block__title">Мост дьявола</h3>
               <p class="content-block__text">Автор фото: Антон</p>
-              <span class="content-block-likes">254</span>
+              <a class="content-block__likes" href="#">
+                <img class="content-block__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
+                <span class="content-block__likes-quantity">254</span>
+              </a>
             </div>
           </li>
         </ul>
       </section>
       <section class="doubt">
-        <div class="doubt__wrapper" >
-          <h2 class="doubt__title">Всё ещё сомневаетесь?</h2>
-          <p class="doubt__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <a class="doubt__link" href="#">
-            <img class="doubt__video" src="img/video-mobile.jpg.jpg" width="280" height="177" alt="Дорога на Седону">
-          </a>
+        <div class="doubt__header header">
+          <h2 class="header__title">Всё ещё сомневаетесь?</h2>
+          <p class="header__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
+        <a class="doubt__link" href="#">
+          <img class="doubt__video" src="img/prewiew.jpg" width="280" height="177" alt="Дорога на Седону, вокруг красные скалы и чахлая зелень.">
+        </a>
       </section>
 
     </main>
 
-    <footer class="footer">      <h2 class="visually-hidden">Посетите Седону.</h2>
+    <footer class="footer">
+      <h2 class="visually-hidden">Посетите Седону.</h2>
       <a class="footer__visit-link" href="#">#VisitSedona</a>
       <section class="footer__social">
         <h2 class="visually-hidden">htmlacademy в социальных сетях.</h2>
@@ -134,16 +148,13 @@
           </li>
         </ul>
       </section>
-      <section class="website">
-        <h2 class="website__developed">Разработано</h2>
-        <a class="website__item" href="https://htmlacademy.ru">
-          <svg class="website-logo" role="img" aria-label="Логотип-ссылка htmlacademy." xmlns="http://www.w3.org/2000/svg" width="29" height="35" fill="none" viewBox="0 0 29 35">
-            <path fill="#000" d="M14.7.4h-.1L1 1.8v24.8l13.5 8 13.3-8V1.8L14.8.4ZM26 12.6 14.5 5.7l-.2-.2v.1L3 12.6v-9l11.4-1.3 11.7 1.2v9ZM14.4 7.2 26 14l-4.4 2.7-7.2-4.3v1.4l6
+      <span class="footer__website-develop">Разработано</span>
+      <a class="footer__website-link" href="https://htmlacademy.ru">
+        <svg class="website-logo" role="img" aria-label="Логотип-ссылка htmlacademy." xmlns="http://www.w3.org/2000/svg" width="29" height="35" fill="none" viewBox="0 0 29 35">
+          <path fill="#000" d="M14.7.4h-.1L1 1.8v24.8l13.5 8 13.3-8V1.8L14.8.4ZM26 12.6 14.5 5.7l-.2-.2v.1L3 12.6v-9l11.4-1.3 11.7 1.2v9ZM14.4 7.2 26 14l-4.4 2.7-7.2-4.3v1.4l6
             3.6-1 .4-5-3v1.4l3.8 2.3-.8.6-3-1.9v1.4l2 1.1-1.9 1.1-11.3-6.6 11.3-6.9ZM3 15.6l11.4 6.8v1l-7.9-4.8V20l8 4.9v1l-8-4.6v1.3l8 4.8 8.2-4.8v-5.3l3.3-2v10l-11.4 7-11.6-6.8v-10Z"/>
-          </svg>
-        </a>
-
-      </section>
+        </svg>
+      </a>
     </footer>
 
   </body>
