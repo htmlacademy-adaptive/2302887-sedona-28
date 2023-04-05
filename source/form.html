@@ -47,8 +47,10 @@
         <img class="hero-form__title" src="img/sedona.svg" width="229" height="39" alt="Sedona.">
       </section>
       <section class="feedbacks">
-        <h2 class="feedbacks__title">Оставьте свой отзыв</h2>
-        <p class="feedbacks__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+        <div class="feedbacks__header header">
+          <h2 class="header__title">Оставьте свой отзыв</h2>
+          <p class="header__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами достопримечательностях</p>
+        </div>
         <form class="feedbacks__form form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="form__fieldset fieldset">
             <legend class="fieldset__title">Представьтесь:</legend>
@@ -158,8 +160,10 @@
             <input class="fieldset__field" type="text" placeholder="Опишите подробно все свои восторги" name="emotions">
           </fieldset>
 
-          <button class="feedbacks__button" type="submit">Отправить отзыв</button>
-          <p class="feedbacks__text">*-обязательные поля</p>
+          <div class="form__fieldset send">
+            <button class="send__button" type="submit">Отправить отзыв</button>
+            <span class="send__text">*-обязательные поля</span>
+          </div>
         </form>
       </section>
     </main>

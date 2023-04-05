@@ -47,32 +47,42 @@
         <img class="hero-catalog__title" src="img/sedona.svg" width="229" height="39" alt="Это Sedona.">
       </section>
       <section class="views">
-        <h2 class="visually-hidden">Виды Седоны</h2>
-        <p class="views__title">Фото и видео</p>
-        <p class="views__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="views__header header">
+          <h2 class="header__title">Фото и видео</h2>
+          <p class="header__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
         <ul class="views__list content-list">
           <li class="content-list__item content-block">
-            <img class="content-block__image" src="img/photo-1-mobile.jpg.jpg" width="280" height="280" alt="Шоссе, вокруг чахлая растительность,на горизонте горы.">
+            <img class="content-block__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Шоссе, вокруг чахлая растительность,на горизонте горы.">
             <div class="content-block__wrapper">
               <h3 class="content-block__title">Неродные просторы</h3>
               <p class="content-block__text">Автор фото: борис</p>
-              <span class="content-block-likes">1350</span>
+              <a class="content-block__likes" href="#">
+                <img class="content-block__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
+                <span class="content-block__likes-quantity">1350</span>
+              </a>
             </div>
           </li>
           <li class="content-list__item content-block">
-            <img class="content-block__image" src="img/photo-2-mobile.jpg.jpg" width="280" height="280" alt="Местный кактус цветёт на фоне красных скал.">
+            <img class="content-block__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местный кактус цветёт на фоне красных скал.">
             <div class="content-block__wrapper">
               <h3 class="content-block__title">Местная растительность</h3>
               <p class="content-block__text">Автор фото: Сергей</p>
-              <span class="content-block-likes">145</span>
+              <a class="content-block__likes" href="#">
+                <img class="content-block__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
+                <span class="content-block__likes-quantity">145</span>
+              </a>
             </div>
           </li>
           <li class="content-list__item content-block">
-            <img class="content-block__image" src="img/photo-3-mobile.jpg.jpg" width="280" height="280" alt="Вид на горный серпантин на лесистом склоне.">
+            <img class="content-block__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Вид на горный серпантин на лесистом склоне.">
             <div class="content-block__wrapper">
               <h3 class="content-block__title">Дорога на север</h3>
               <p class="content-block__text">Автор фото: Пётр</p>
-              <span class="content-block-likes">96</span>
+              <a class="content-block__likes" href="#">
+                <img class="content-block__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
+                <span class="content-block__likes-quantity">96</span>
+              </a>
             </div>
           </li>
           <li class="content-list__item content-block">
@@ -80,19 +90,22 @@
             <div class="content-block__wrapper">
               <h3 class="content-block__title">Мост дьявола</h3>
               <p class="content-block__text">Автор фото: Антон</p>
-              <span class="content-block-likes">254</span>
+              <a class="content-block__likes" href="#">
+                <img class="content-block__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
+                <span class="content-block__likes-quantity">254</span>
+              </a>
             </div>
           </li>
         </ul>
       </section>
       <section class="doubt">
-        <div class="doubt__wrapper" >
-          <h2 class="doubt__title">Всё ещё сомневаетесь?</h2>
-          <p class="doubt__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <a class="doubt__link" href="#">
-            <img class="doubt__video" src="img/video-mobile.jpg.jpg" width="280" height="177" alt="Дорога на Седону">
-          </a>
+        <div class="doubt__header header">
+          <h2 class="header__title">Всё ещё сомневаетесь?</h2>
+          <p class="header__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
+        <a class="doubt__link" href="#">
+          <img class="doubt__video" src="img/prewiew.jpg" width="280" height="177" alt="Дорога на Седону, вокруг красные скалы и чахлая зелень.">
+        </a>
       </section>
 
     </main>
