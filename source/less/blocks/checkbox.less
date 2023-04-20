@@ -1,0 +1,16 @@
+.fieldset__control-mark-checkbox {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+}
+
+.fieldset__control-input[type="checkbox"]:checked + .fieldset__control-mark-checkbox {
+  position: absolute;
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
