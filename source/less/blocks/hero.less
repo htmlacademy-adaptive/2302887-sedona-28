@@ -8,6 +8,13 @@
   margin-bottom: 32px;
 }
 
+.hero__title {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
 .hero::after {
   position: absolute;
   content: "";
@@ -66,11 +73,4 @@
     background: url("../../img/divider-pc.svg") no-repeat;
     z-index: 1;
   }
-}
-
-.hero__title {
-  position: absolute;
-  right: 50%;
-  top: 50%;
-  transform: translate(50%, -50%);
 }
