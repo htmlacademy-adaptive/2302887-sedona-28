@@ -131,13 +131,26 @@ img {
   background-image: url("../img/welcome-background.jpg");
   background-color: #689481;
   background-size: cover;
-  object-position: center;
   margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .hero {
+    min-height: 518px;
+    background-image: url("../../img/welcome-background-tablet.jpg");
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    min-height: 518px;
+    background-image: url("../../img/welcome-background-pc.jpg");
+    margin-bottom: 59px;
+  }
 }
 .hero__title {
   position: absolute;
   right: 50%;
-  top: 50%;
+  top: 41%;
   transform: translate(50%, -50%);
 }
 .hero::after {
@@ -152,15 +165,6 @@ img {
   z-index: 1;
 }
 @media (min-width: 768px) {
-  .hero {
-    position: relative;
-    min-height: 389px;
-    background-image: url("../../img/welcome-background-tablet.jpg");
-    background-color: #689481;
-    background-size: cover;
-    object-position: center;
-    margin-bottom: 32px;
-  }
   .hero::after {
     position: absolute;
     content: "";
@@ -174,15 +178,6 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  .hero {
-    position: relative;
-    min-height: 389px;
-    background-image: url("../../img/welcome-background-pc.jpg");
-    background-color: #689481;
-    background-size: cover;
-    object-position: center;
-    margin-bottom: 32px;
-  }
   .hero::after {
     position: absolute;
     content: "";
@@ -627,6 +622,18 @@ img {
   background-position: center;
   margin-bottom: 37px;
 }
+@media (min-width: 768px) {
+  .hero-catalog {
+    height: 290px;
+    background-image: url("../../img/welcome-background-tablet.jpg");
+    margin-bottom: 4px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-catalog {
+    margin-bottom: 100px;
+  }
+}
 .hero-catalog::before {
   position: absolute;
   content: "";
@@ -637,6 +644,14 @@ img {
   transform: translate(50%, 0);
   background: url("../../img/sedona.svg") no-repeat;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .hero-catalog::before {
+    width: 457px;
+    height: 78px;
+    bottom: 117px;
+    background: url("../../img/sedona-tablet.svg") no-repeat;
+  }
 }
 .hero-catalog::after {
   position: absolute;
@@ -650,17 +665,6 @@ img {
   z-index: 1;
 }
 @media (min-width: 768px) {
-  .hero-catalog {
-    height: 290px;
-    background-image: url("../../img/welcome-background-tablet.jpg");
-    margin-bottom: 4px;
-  }
-  .hero-catalog::before {
-    width: 457px;
-    height: 78px;
-    bottom: 117px;
-    background: url("../../img/sedona-tablet.svg") no-repeat;
-  }
   .hero-catalog::after {
     width: 768px;
     background: url("../../img/divider-tablet.svg") no-repeat;
@@ -687,8 +691,21 @@ img {
     padding: 60px;
   }
 }
+@media (min-width: 1200px) {
+  .views__wrapper {
+    min-width: 1200px;
+    padding: 0;
+  }
+}
 .views__title-wrapper {
   position: relative;
+  max-width: 458px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .views__title-wrapper {
+    width: 458px;
+  }
 }
 .views__title-wrapper::after {
   position: absolute;
@@ -706,7 +723,6 @@ img {
   }
 }
 .views__title {
-  min-width: 284px;
   margin: 0;
   margin-bottom: 35px;
   text-align: center;
@@ -723,7 +739,6 @@ img {
   }
 }
 .views__text {
-  min-width: 284px;
   margin: 0;
   margin-bottom: 50px;
   font-weight: 400;
@@ -735,7 +750,7 @@ img {
 }
 @media (min-width: 768px) {
   .views__text {
-    min-width: 648px;
+    min-width: 458px;
     margin-bottom: 80px;
     font-size: 21px;
     line-height: 26px;
