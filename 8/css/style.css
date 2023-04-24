@@ -150,7 +150,7 @@ img {
 .hero__title {
   position: absolute;
   right: 50%;
-  top: 41%;
+  top: 50%;
   transform: translate(50%, -50%);
 }
 .hero::after {
@@ -632,25 +632,6 @@ img {
 @media (min-width: 1200px) {
   .hero-catalog {
     margin-bottom: 100px;
-  }
-}
-.hero-catalog::before {
-  position: absolute;
-  content: "";
-  width: 229px;
-  height: 39px;
-  right: 50%;
-  bottom: 67px;
-  transform: translate(50%, 0);
-  background: url("../../img/sedona.svg") no-repeat;
-  z-index: 1;
-}
-@media (min-width: 768px) {
-  .hero-catalog::before {
-    width: 457px;
-    height: 78px;
-    bottom: 117px;
-    background: url("../../img/sedona-tablet.svg") no-repeat;
   }
 }
 .hero-catalog::after {

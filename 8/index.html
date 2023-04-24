@@ -48,7 +48,11 @@
       <main class="main">
         <section class="hero">
           <h1 class="visually-hidden">Приезжайте увидеть красоты Седоны!</h1>
-          <img class="hero__title" src="img/welcome.svg" width="282" height="214" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/welcome-tablet.svg" width="461" heght="350">
+            <img class="hero__title" src="img/welcome.svg" width="282" height="214" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
+          </picture>
         </section>
 
         <section class="advantages">
