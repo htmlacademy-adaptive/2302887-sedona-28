@@ -611,6 +611,14 @@ img {
     margin-right: 60px;
   }
 }
+@media (min-width: 1200px) {
+  .footer__link-wrapper {
+    margin-left: 120px;
+  }
+  .footer__website-wrapper {
+    margin-right: 120px;
+  }
+}
 .hero-catalog {
   position: relative;
   height: 156px;
@@ -744,6 +752,7 @@ img {
 @media (min-width: 768px) {
   .views__list {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .views-list__item {
@@ -755,6 +764,11 @@ img {
   .views-list__item {
     margin: 0;
     background-color: #f2f2f2;
+  }
+}
+@media (min-width: 1200px) {
+  .views-list__item {
+    background-color: #ffffff;
   }
 }
 .views-list__item::after {
@@ -781,6 +795,11 @@ img {
     width: 324px;
   }
 }
+@media (min-width: 1200px) {
+  .foto-modul__image {
+    margin: 0;
+  }
+}
 .foto-modul__title {
   margin: 0;
   font-weight: 700;
@@ -796,6 +815,12 @@ img {
   line-height: 21px;
   color: #333333;
 }
+@media (min-width: 1200px) {
+  .foto-modul__text {
+    margin: 0;
+    color: #ffffff;
+  }
+}
 .foto-modul__likes {
   text-decoration: none;
   font-weight: 700;
@@ -803,6 +828,11 @@ img {
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+}
+@media (min-width: 1200px) {
+  .foto-modul__likes {
+    color: #ffffff;
+  }
 }
 @media (min-width: 768px) {
   .foto-modul--first {
@@ -814,12 +844,27 @@ img {
     width: 100%;
   }
 }
+@media (min-width: 1200px) {
+  .foto-modul__wrapper {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    margin-left: 21px;
+    color: #ffffff;
+  }
+}
 .doubt__wrapper {
   min-width: 266px;
   margin: 0 auto;
   margin-right: 20px;
   margin-left: 20px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .doubt__wrapper {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
 }
 .doubt__title {
   margin: 0;
@@ -907,6 +952,11 @@ img {
     min-width: 576px;
     width: 100%;
     margin-left: 84px;
+  }
+}
+@media (min-width: 1200px) {
+  .fieldset__list--4 {
+    margin-left: 45px;
   }
 }
 .fieldset__wrapper {
@@ -1114,6 +1164,12 @@ img {
   .feedbacks__wrapper {
     margin-bottom: 4px;
     padding: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .feedbacks__wrapper {
+    margin-bottom: 4px;
+    padding: 120px;
   }
 }
 .feedbacks__title {
