@@ -12,10 +12,21 @@
     min-width: 648px;
     padding: 60px;
   }
+
+  @media (min-width: 1200px) {
+    min-width: 1200px;
+    padding: 0;
+  }
 }
 
 .views__title-wrapper {
   position: relative;
+  max-width: 458px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 458px;
+  }
 }
 
 .views__title-wrapper::after {
@@ -34,7 +45,6 @@
 }
 
 .views__title {
-  min-width: 284px;
   margin: 0;
   margin-bottom: 35px;
   text-align: center;
@@ -51,7 +61,6 @@
 }
 
 .views__text {
-  min-width: 284px;
   margin: 0;
   margin-bottom: 50px;
   font-weight: 400;
@@ -62,7 +71,7 @@
   color: #333333;
 
   @media (min-width: 768px) {
-    min-width: 648px;
+    min-width: 458px;
     margin-bottom: 80px;
     font-size: 21px;
     line-height: 26px;

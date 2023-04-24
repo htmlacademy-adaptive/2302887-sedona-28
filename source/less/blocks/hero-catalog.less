@@ -5,6 +5,16 @@
   background-size: cover;
   background-position: center;
   margin-bottom: 37px;
+
+  @media (min-width: 768px) {
+    height: 290px;
+    background-image: url("../../img/welcome-background-tablet.jpg");
+    margin-bottom: 4px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 100px;
+  }
 }
 
 .hero-catalog::before {
@@ -17,6 +27,13 @@
   transform: translate(50%, 0);
   background: url("../../img/sedona.svg") no-repeat;
   z-index: 1;
+
+  @media (min-width: 768px) {
+    width: 457px;
+    height: 78px;
+    bottom: 117px;
+    background: url("../../img/sedona-tablet.svg") no-repeat;
+  }
 }
 
 .hero-catalog::after {
@@ -29,30 +46,13 @@
   transform: translate(50%, 0);
   background: url("../img/divider.svg") no-repeat;
   z-index: 1;
-}
 
-@media (min-width: 768px) {
-  .hero-catalog {
-    height: 290px;
-    background-image: url("../../img/welcome-background-tablet.jpg");
-    margin-bottom: 4px;
-  }
-
-  .hero-catalog::before {
-    width: 457px;
-    height: 78px;
-    bottom: 117px;
-    background: url("../../img/sedona-tablet.svg") no-repeat;
-  }
-
-  .hero-catalog::after {
+  @media (min-width: 768px) {
     width: 768px;
     background: url("../../img/divider-tablet.svg") no-repeat;
   }
-}
 
-@media (min-width: 1200px) {
-  .hero-catalog::after {
+  @media (min-width: 1200px) {
     width: 1200px;
     background: url("../../img/divider-pc.svg") no-repeat;
   }

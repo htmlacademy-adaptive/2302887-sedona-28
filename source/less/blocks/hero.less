@@ -4,14 +4,25 @@
   background-image: url("../img/welcome-background.jpg");
   background-color: #689481;
   background-size: cover;
-  object-position: center;
   margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    min-height: 518px;
+    background-image: url("../../img/welcome-background-tablet.jpg");
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 518px;
+    background-image: url("../../img/welcome-background-pc.jpg");
+    margin-bottom: 59px;
+  }
 }
 
 .hero__title {
   position: absolute;
   right: 50%;
-  top: 50%;
+  top: 41%;
   transform: translate(50%, -50%);
 }
 
@@ -28,16 +39,6 @@
 }
 
 @media (min-width: 768px) {
-  .hero {
-    position: relative;
-    min-height: 389px;
-    background-image: url("../../img/welcome-background-tablet.jpg");
-    background-color: #689481;
-    background-size: cover;
-    object-position: center;
-    margin-bottom: 32px;
-  }
-
   .hero::after {
     position: absolute;
     content: "";
@@ -52,16 +53,6 @@
 }
 
 @media (min-width: 1200px) {
-  .hero {
-    position: relative;
-    min-height: 389px;
-    background-image: url("../../img/welcome-background-pc.jpg");
-    background-color: #689481;
-    background-size: cover;
-    object-position: center;
-    margin-bottom: 32px;
-  }
-
   .hero::after {
     position: absolute;
     content: "";
