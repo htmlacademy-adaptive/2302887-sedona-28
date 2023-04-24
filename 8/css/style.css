@@ -673,6 +673,12 @@ img {
   padding: 18px;
   padding-bottom: 0;
 }
+@media (min-width: 768px) {
+  .views__wrapper {
+    min-width: 648px;
+    padding: 60px;
+  }
+}
 .views__title-wrapper {
   position: relative;
 }
@@ -686,6 +692,11 @@ img {
   content: "";
   background-color: #e5e5e5;
 }
+@media (min-width: 768px) {
+  .views__title-wrapper::after {
+    height: 0;
+  }
+}
 .views__title {
   min-width: 284px;
   margin: 0;
@@ -695,6 +706,13 @@ img {
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .views__title {
+    min-width: 458px;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
 }
 .views__text {
   min-width: 284px;
@@ -707,6 +725,14 @@ img {
   text-transform: uppercase;
   color: #333333;
 }
+@media (min-width: 768px) {
+  .views__text {
+    min-width: 648px;
+    margin-bottom: 80px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
 .views__list {
   display: flex;
   flex-direction: column;
@@ -715,10 +741,21 @@ img {
   margin: 0;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .views__list {
+    flex-direction: row;
+  }
+}
 .views-list__item {
   position: relative;
   margin: 0 auto;
   margin-bottom: 49px;
+}
+@media (min-width: 768px) {
+  .views-list__item {
+    margin: 0;
+    background-color: #f2f2f2;
+  }
 }
 .views-list__item::after {
   position: absolute;
@@ -730,9 +767,19 @@ img {
   content: "";
   background-color: #e5e5e5;
 }
+@media (min-width: 768px) {
+  .views-list__item::after {
+    height: 0;
+  }
+}
 .foto-modul__image {
   width: 767px;
   margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .foto-modul__image {
+    width: 324px;
+  }
 }
 .foto-modul__title {
   margin: 0;
@@ -758,20 +805,13 @@ img {
   color: #333333;
 }
 @media (min-width: 768px) {
-  .views__wrapper {
+  .foto-modul--first {
     min-width: 648px;
-    padding: 60px;
+    width: 100%;
   }
-  .views__title {
-    min-width: 458px;
-    margin-bottom: 40px;
-    font-size: 30px;
-  }
-  .views__text {
+  .foto-modul__image--first {
     min-width: 648px;
-    margin-bottom: 80px;
-    font-size: 21px;
-    line-height: 26px;
+    width: 100%;
   }
 }
 .doubt__wrapper {
@@ -1106,7 +1146,7 @@ img {
   .feedbacks__form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 386px 210px 231px 262px 59px;
+    grid-template-rows: 386px 210px 231px 262px 58px;
     justify-items: end;
   }
 }
