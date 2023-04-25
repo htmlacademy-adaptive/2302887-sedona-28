@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Отзыв о Седоне, Аризона, США</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=320px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="https://htmlacademy-adaptive.github.io/2302887-sedona-28/8/">
 </head>
 
@@ -15,11 +15,11 @@
         <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="header__nav nav">
-        <button class="nav__toggle nav__toggle--hidden" type="button">
+        <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="nav__wrapper">
-          <ul class="nav__list nav-list nav-list--hidden">
+          <ul class="nav__list nav-list">
             <li class="nav-list__item ">
               <a class="nav-list__link" href="index.html">
                 Главная
@@ -30,7 +30,7 @@
                 Фото и видео
               </a>
             </li>
-            <li class="nav-list__item item3 nav-list__item--current">
+            <li class="nav-list__item nav-list__item--right nav-list__item--current">
               <a class="nav-list__link nav-list__link--current">
                 Форма отзыва
               </a>
@@ -102,9 +102,9 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__fieldset fieldset form__fieldset--3">
-              <legend class="fieldset__title fieldset__title--3">Ваше общее впечатление:</legend>
-              <ul class="fieldset__list fieldset__list--3">
+            <fieldset class="form__fieldset form__fieldset--impression fieldset ">
+              <legend class="fieldset__title fieldset__title--impression">Ваше общее впечатление:</legend>
+              <ul class="fieldset__list fieldset__list--impression">
                 <li class="fieldset__item fieldset__item--radio-checkbox">
                   <label class="fieldset__control">
                     <input class="fieldset__control-input visually-hidden" type="radio" name="impressions-type" value="positiv" checked>
@@ -129,9 +129,9 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__fieldset fieldset fieldset form__fieldset--4">
+            <fieldset class="form__fieldset form__fieldset--attractions fieldset">
               <legend class="fieldset__title">Посещённые достопримечательности:</legend>
-                <ul class="fieldset__list fieldset__list--4">
+                <ul class="fieldset__list fieldset__list--attractions">
                 <li class="fieldset__item fieldset__item--radio-checkbox">
                   <label class="fieldset__control">
                     <input class="fieldset__control-input visually-hidden" type="checkbox" name="bridge" checked>
@@ -155,7 +155,7 @@
                 </li>
                 <li class="fieldset__item">
                   <label class="fieldset__control fieldset__item--radio-checkbox">
-                    <input class="fieldset__control-input visually-hidden" type="checkbox" name="park">
+                    <input class="fieldset__control-input visually-hidden" type="checkbox" name="rocks">
                     <span class="fieldset__control-mark-checkbox"></span>
                     <span class="fieldset__span-radiocheck">Красные Скалы</span>
                   </label>
@@ -163,12 +163,12 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__fieldset fieldset form__fieldset--5">
+            <fieldset class="form__fieldset form__fieldset--emoution fieldset">
               <legend class="fieldset__title fieldset__title--emoution">Опишите свои эмоции:</legend>
               <input class="fieldset__field fieldset__field--emotion" type="text" placeholder="Опишите подробно все свои восторги" name="emotions">
             </fieldset>
 
-            <div class="form__fieldset send form__fieldset--6">
+            <div class="form__fieldset form__fieldset--send send">
               <div class="send__button-wrapper">
                 <button class="send__button" type="submit">Отправить отзыв</button>
               </div>
