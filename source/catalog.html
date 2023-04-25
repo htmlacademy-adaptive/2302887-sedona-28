@@ -50,7 +50,7 @@
         <picture>
           <source media="(min-width: 768px)"
             srcset="img/sedona-tablet.svg" width="457" heght="78">
-          <img class="hero__title" src="img/sedona.svg" width="282" height="214" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
+          <img class="hero__title" src="img/sedona.svg" width="229" height="39" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
         </picture>
       </section>
       <section class="views">
@@ -61,53 +61,73 @@
           </div>
           <ul class="views__list views-list">
             <li class="views-list__item foto-modul foto-modul--first">
-              <img class="foto-modul__image foto-modul__image--first" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Шоссе, вокруг чахлая растительность,на горизонте горы.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="img/photo-1-desktop.jpg" width="1200" heght="400">
+                <source media="(min-width: 768px)"
+                srcset="img/photo-1-tablet.jpg" width="648" heght="400">
+                <img class="foto-modul__image foto-modul__image--first" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Шоссе, вокруг чахлая растительность,на горизонте горы.">
+              </picture>
               <div class="foto-modul__wrapper">
                 <div class="foto-modul__title-wrapper">
                   <h3 class="foto-modul__title">Неродные просторы</h3>
                   <p class="foto-modul__text">Автор фото: борис</p>
                 </div>
-                <a class="foto-modul__likes" href="#">
-                  <img class="foto-modul__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
-                  <span class="foto-modul__likes-value">1350</span>
+                <a class="foto-modul__likes likes-first" href="#">
+                  <span class="foto-modul__likes-value value-first">1350</span>
                 </a>
               </div>
             </li>
             <li class="views-list__item foto-modul">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="img/photo-2-desktop.jpg" width="400" heght="267">
+                <source media="(min-width: 768px)"
+                srcset="img/photo-2-tablet.jpg" width="324" heght="267">
               <img class="foto-modul__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местный кактус цветёт на фоне красных скал.">
+              </picture>
               <div class="foto-modul__wrapper">
                 <div class="foto-modul__title-wrapper">
                   <h3 class="foto-modul__title">Местная растительность</h3>
                   <p class="foto-modul__text">Автор фото: Сергей</p>
                 </div>
                 <a class="foto-modul__likes" href="#">
-                  <img class="foto-modul__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
                   <span class="foto-modul__likes-value">145</span>
                 </a>
               </div>
             </li>
             <li class="views-list__item foto-modul">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="img/photo-3-desktop.jpg" width="400" heght="267">
+                <source media="(min-width: 768px)"
+                srcset="img/photo-3-tablet.jpg" width="324" heght="267">
               <img class="foto-modul__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Вид на горный серпантин на лесистом склоне.">
+              </picture>
               <div class="foto-modul__wrapper">
                 <div class="foto-modul__title-wrapper">
                   <h3 class="foto-modul__title">Дорога на север</h3>
                   <p class="foto-modul__text">Автор фото: Пётр</p>
                 </div>
                 <a class="foto-modul__likes" href="#">
-                  <img class="foto-modul__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
                   <span class="foto-modul__likes-value">96</span>
                 </a>
               </div>
             </li>
             <li class="views-list__item foto-modul">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="img/photo-4-desktop.jpg" width="400" heght="267">
+                <source media="(min-width: 768px)"
+                srcset="img/photo-4-tablet.jpg" width="324" heght="267">
               <img class="foto-modul__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Вид на мост в окружении красных скал, на горизонте скалистая местность.">
+              </picture>
               <div class="foto-modul__wrapper">
                 <div class="foto-modul__title-wrapper">
                   <h3 class="foto-modul__title">Мост дьявола</h3>
                   <p class="foto-modul__text">Автор фото: Антон</p>
                 </div>
                 <a class="foto-modul__likes" href="#">
-                  <img class="foto-modul__icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк иконка.">
                   <span class="foto-modul__likes-value">254</span>
                 </a>
               </div>
@@ -123,7 +143,13 @@
 
           <div class="doubt__link-wrapper">
             <a class="doubt__link" href="#">
-              <img class="doubt__video" src="img/prewiew.jpg" width="280" height="177" alt="Дорога на Седону, вокруг красные скалы и чахлая зелень.">
+              <picture>
+                <source media="(min-width: 1200px)"
+                srcset="img/prewiew-pc.jpg" width="800" heght="500">
+                <source media="(min-width: 768px)"
+                srcset="img/prewiew-tablet.jpg" width="648" heght="500">
+                <img class="doubt__video" src="img/prewiew.jpg" width="280" height="177" alt="Дорога на Седону, вокруг красные скалы и чахлая зелень.">
+              </picture>
             </a>
           </div>
         </div>
