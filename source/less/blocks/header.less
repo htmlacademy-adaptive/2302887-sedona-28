@@ -23,6 +23,10 @@
   border: none;
   background-color: #ffffff;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .nav-list {
@@ -31,24 +35,16 @@
   list-style: none;
   text-decoration: none;
   margin: 18px auto;
-}
 
-.nav-list--hidden {
-  display: none;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
   .header__nav {
     display: inline-block;
     width: 100%;
-  }
-
-  .nav-list--hidden {
-    display: contents;
-  }
-
-  .nav__toggle--hidden {
-    display: none;
   }
 
   .nav-list {
@@ -84,4 +80,3 @@
     color: #766357;
   }
 }
-
