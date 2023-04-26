@@ -26,6 +26,19 @@
   padding: 0;
   margin: 0 auto;
   margin-bottom: 64px;
+
+  &--impression {
+    width: 280px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-width: 576px;
+      width: 100%;
+      margin-left: 36px;
+    }
+  }
 }
 
 .fieldset__item {
@@ -33,19 +46,6 @@
 
   @media (min-width: 768px) {
     min-width: 224px;
-  }
-}
-
-.fieldset__list--impression {
-  width: 280px;
-
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-width: 576px;
-    width: 100%;
-    margin-left: 36px;
   }
 }
 
