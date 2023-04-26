@@ -7,16 +7,38 @@
   background-color: #689481;
   margin-bottom: 32px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 57px;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, 0);
+    background: url("../img/divider.svg") no-repeat;
+    z-index: 1;
+  }
+
   @media (min-width: 768px) {
     min-height: 518px;
     background-image: url("../img/welcome-background-tablet.jpg");
     margin-bottom: 48px;
+
+    &::after {
+      width: 768px;
+      background: url("../img/divider-tablet.svg") no-repeat;
+    }
   }
 
   @media (min-width: 1200px) {
     min-height: 518px;
     background-image: url("../img/welcome-background-pc.jpg");
     margin-bottom: 59px;
+
+    &::after {
+      width: 1200px;
+      background: url("../img/divider-pc.svg") no-repeat;
+    }
   }
 }
 
@@ -25,44 +47,4 @@
   right: 50%;
   top: 50%;
   transform: translate(50%, -50%);
-}
-
-.hero::after {
-  position: absolute;
-  content: "";
-  width: 320px;
-  height: 57px;
-  right: 50%;
-  bottom: -1px;
-  transform: translate(50%, 0);
-  background: url("../img/divider.svg") no-repeat;
-  z-index: 1;
-}
-
-@media (min-width: 768px) {
-  .hero::after {
-    position: absolute;
-    content: "";
-    width: 768px;
-    height: 57px;
-    right: 50%;
-    bottom: -1px;
-    transform: translate(50%, 0);
-    background: url("../img/divider-tablet.svg") no-repeat;
-    z-index: 1;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero::after {
-    position: absolute;
-    content: "";
-    width: 1200px;
-    height: 57px;
-    right: 50%;
-    bottom: -1px;
-    transform: translate(50%, 0);
-    background: url("../img/divider-pc.svg") no-repeat;
-    z-index: 1;
-  }
 }
