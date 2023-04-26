@@ -13,7 +13,7 @@
     width: 320px;
     height: 57px;
     right: 50%;
-    bottom: 0;
+    bottom: -1px;
     transform: translate(50%, 0);
     background: url("../img/divider.svg") no-repeat;
     z-index: 1;
@@ -31,13 +31,14 @@
   }
 
   @media (min-width: 1200px) {
-    min-height: 518px;
+    min-height: 507px;
     background-image: url("../img/welcome-background-pc.jpg");
     margin-bottom: 59px;
 
     &::after {
       width: 1200px;
       background: url("../img/divider-pc.svg") no-repeat;
+      bottom: 0;
     }
   }
 }
