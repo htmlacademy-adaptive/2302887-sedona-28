@@ -1,0 +1,45 @@
+.fieldset__item--radio-checkbox {
+  margin-bottom: 36px;
+}
+
+.fieldset__control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fieldset__control-input {
+  cursor: pointer;
+}
+
+.fieldset__control-mark-radio {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: #f2f2f2;
+}
+
+.fieldset__control-input[type="radio"]:checked + .fieldset__control-mark-radio {
+  position: absolute;
+  background-image: url("../../img/dot.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fieldset__span-radiocheck {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+
+  @media (min-width: 768px) {
+    padding-right: 49px;
+  }
+}

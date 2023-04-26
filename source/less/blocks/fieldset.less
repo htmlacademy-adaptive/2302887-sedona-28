@@ -1,0 +1,212 @@
+.form__fieldset {
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+
+.fieldset__title {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
+}
+
+.fieldset__list {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 64px;
+
+  &--impression {
+    width: 280px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-width: 576px;
+      width: 100%;
+      margin-left: 36px;
+    }
+  }
+
+  &--attractions {
+    width: 280px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-width: 576px;
+      width: 100%;
+      margin-left: 84px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 45px;
+    }
+  }
+}
+
+.fieldset__item {
+  min-width: 280px;
+
+  @media (min-width: 768px) {
+    min-width: 224px;
+  }
+}
+
+.fieldset__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+
+  @media (min-width: 768px) {
+    min-width: 295px;
+  }
+}
+
+.fieldset__span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.fieldset__field {
+  box-sizing: border-box;
+  height: 58px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 16px;
+  padding: 12px 20px;
+  background: #f2f2f2;
+  border: 0;
+
+  @media (min-width: 768px) {
+    min-width: 295px;
+  }
+
+  @media (min-width: 1200px) {
+    min-width: 430px;
+  }
+
+  &--emotion {
+    min-width: 280px;
+    width: 100%;
+    height: 150px;
+
+    @media (min-width: 768px) {
+      min-width: 648px;
+      height: 160px;
+    }
+  }
+
+  &--icon-tel {
+    background-image: url("../img/icon-tel.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+  }
+
+  &--icon-mail {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+  }
+}
+
+.send__button-wrapper {
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.send__button {
+  width: 280px;
+  min-height: 58px;
+  padding: 8px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    width: 324px;
+  }
+}
+
+.send__text-wrapper {
+  width: 100%;
+  text-align: right;
+}
+
+.send__text {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form__fieldset--impression {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .fieldset__title--impression {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__fieldset--attractions {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__fieldset--emoution {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    width: 100%;
+  }
+
+  .form__fieldset--send {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+}
