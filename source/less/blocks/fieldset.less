@@ -129,50 +129,23 @@
   }
 }
 
-.send__button-wrapper {
-  text-align: center;
-
-  @media (min-width: 768px) {
-    text-align: left;
-  }
+.fieldset__control-mark-checkbox {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 3px;
+  background-color: #f2f2f2;
 }
 
-.send__button {
-  width: 280px;
-  min-height: 58px;
-  padding: 8px;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  color: #ffffff;
-  background-color: #81b3d2;
-  border: 0;
-  text-transform: uppercase;
-  cursor: pointer;
-
-  @media (min-width: 768px) {
-    width: 324px;
-  }
+.fieldset__control-input[type="checkbox"]:checked + .fieldset__control-mark-checkbox {
+  position: absolute;
+  background-image: url("../../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.send__text-wrapper {
-  width: 100%;
-  text-align: right;
-}
-
-.send__text {
-  margin-left: auto;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
-  text-transform: uppercase;
-
-  @media (min-width: 768px) {
-    margin: 0;
-    font-size: 14px;
-  }
-}
 
 @media (min-width: 768px) {
   .form__fieldset--impression {
