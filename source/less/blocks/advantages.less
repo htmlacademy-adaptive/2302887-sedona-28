@@ -79,6 +79,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .advantages-item__wrapper {
+    min-height: 256px;
+  }
+}
+
 .advantages-item__wrapper--image {
   text-align: center;
   color: #ffffff;
@@ -153,42 +159,42 @@
     padding-left: 0;
     width: 33.33%;
   }
-}
 
-.features-list__item:nth-child(1) {
-  background-image: url("../img/icon-house.svg");
-  background-repeat: no-repeat;
-  background-position: 13px 0;
+  &--house {
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 0;
 
-  @media (min-width: 768px) {
-    background-image: url("../img/icon-home-tablet.svg");
-    background-position: center 60px;
+    @media (min-width: 768px) {
+      background-image: url("../img/icon-house-tablet.svg");
+      background-position: center 60px;
+    }
+  }
+
+  &--food {
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 0;
+
+    @media (min-width: 768px) {
+      background-image: url("../img/icon-burger-tablet.svg");
+      background-position: center 60px;
+    }
+  }
+
+  &--souvenirs {
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 0;
+
+    @media (min-width: 768px) {
+      background-image: url("../img/icon-gift-tablet.svg");
+      background-position: center 60px;
+    }
   }
 }
 
-.features-list__item:nth-child(2) {
-  background-image: url("../img/icon-burger.svg");
-  background-repeat: no-repeat;
-  background-position: 13px 0;
-
-  @media (min-width: 768px) {
-    background-image: url("../img/icon-burger-tablet.svg");
-    background-position: center 60px;
-  }
-}
-
-.features-list__item:nth-child(3) {
-  background-image: url("../img/icon-gift.svg");
-  background-repeat: no-repeat;
-  background-position: 13px 0;
-
-  @media (min-width: 768px) {
-    background-image: url("../img/icon-gift-tablet.svg");
-    background-position: center 60px;
-  }
-}
-
-.features-item__title {
+.features-list__title {
   margin-top: 8px;
   margin-bottom: 16px;
   padding: 0 18px;
@@ -205,7 +211,7 @@
   }
 }
 
-.features-item__text {
+.features-list__text {
   margin: 0;
   padding-right: 18px;
   font-weight: 400;
