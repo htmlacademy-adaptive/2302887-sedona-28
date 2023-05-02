@@ -11,11 +11,15 @@
 }
 
 .header__nav {
+  position: absolute;
+  z-index: 1;
   display: flex;
+  width: 100%;
   min-width: 320px;
 
   @media (min-width: 768px) {
     display: inline-block;
-    width: 100%;
+    background-color: #ffffff;
+    z-index: 0;
   }
 }
