@@ -7,6 +7,22 @@
   border: none;
   background-color: #ffffff;
   cursor: pointer;
+  z-index: 3;
+
+  &--burger {
+    background-image: url("../img/icon-menu.svg");
+    background-color: transparent;
+  }
+
+  &--cross {
+    background-image: url("../img/icon-cross.svg");
+    fill: #ffffff;
+    background-color: transparent;
+  }
+
+  &--hidden {
+    display: none;
+  }
 
   @media (min-width: 768px) {
     display: none;
