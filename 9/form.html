@@ -84,7 +84,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__fieldset fieldset">
+            <fieldset class="form__fieldset form__fieldset--contacts  fieldset">
               <legend class="fieldset__title">Контактная информация:</legend>
               <ul class="fieldset__list">
                 <li class="fieldset__item ">
@@ -103,7 +103,9 @@
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--impression fieldset ">
-              <legend class="fieldset__title fieldset__title--impression">Ваше общее впечатление:</legend>
+              <legend class="fieldset__title fieldset__title--impression">
+                <span class="fieldset-text">Ваше общее впечатление:</span>
+              </legend>
               <ul class="fieldset__list fieldset__list--impression">
                 <li class="fieldset__item fieldset__item--radio-checkbox">
                   <label class="fieldset__control">
@@ -130,7 +132,9 @@
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--attractions fieldset">
-              <legend class="fieldset__title">Посещённые достопримечательности:</legend>
+              <legend class="fieldset__title fieldset__title--impression">
+                <span class="fieldset-text">Посещённые достопримечательности:</span>
+              </legend>
                 <ul class="fieldset__list fieldset__list--attractions">
                 <li class="fieldset__item fieldset__item--radio-checkbox">
                   <label class="fieldset__control">
@@ -164,7 +168,9 @@
             </fieldset>
 
             <fieldset class="form__fieldset form__fieldset--emoution fieldset">
-              <legend class="fieldset__title fieldset__title--emoution">Опишите свои эмоции:</legend>
+              <legend class="fieldset__title fieldset__title--impression">
+                <span class="fieldset-text">Опишите свои эмоции:</span>
+              </legend>
               <input class="fieldset__field fieldset__field--emotion" type="text" placeholder="Опишите подробно все свои восторги" name="emotions">
             </fieldset>
 
@@ -230,6 +236,28 @@
         </a>
       </div>
     </footer>
+
+    <section class="modal-error-container modal-error-container--close modal-error">
+      <div class="modal-error__wrapper">
+          <h2 class="modal-error__title">Что-то пошло не так!</h2>
+          <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <div class="modal-error__button-wrapper">
+            <button class="modal-error__button" type="reset">ok</button>
+          </div>
+      </div>
+    </section>
+
+    <section class="modal-send-container modal-send-container--close modal-send">
+      <div class="modal-send__wrapper">
+      <div class="modal-send__title-wrapper">
+          <h2 class="modal-send__title">Ваш отзыв отправлен!</h2>
+          <p class="modal-send__text">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal-send__button-wrapper">
+        <button class="modal-send__button" type="reset">Закрыть окно</button>
+      </div>
+    </div>
+    </section>
 
   </div>
   </body>
