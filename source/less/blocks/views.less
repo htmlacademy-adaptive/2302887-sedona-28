@@ -28,21 +28,6 @@
   @media (min-width: 768px) {
     width: 458px;
   }
-
-  &::after {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: -25px;
-    width: 170%;
-    height: 1px;
-    content: "";
-    background-color: #e5e5e5;
-
-    @media (min-width: 768px) {
-      height: 0;
-    }
-  }
 }
 
 .views__title {
@@ -123,3 +108,17 @@
   }
 }
 
+.foto-module--first::before {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -24px;
+  width: 115%;
+  height: 1px;
+  content: "";
+  background-color: #e5e5e5;
+
+  @media (min-width: 768px) {
+    height: 0;
+  }
+}
