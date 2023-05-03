@@ -47,10 +47,19 @@
 
 @media (min-width: 768px) {
   .feedbacks__form {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto auto auto;
     justify-items: end;
   }
-}
 
+  .feedbacks__form::before {
+    position: absolute;
+    border-right: 1px solid #dbdbdb;
+    content: "";
+    height: 390px;
+    left: 50%;
+    top: 0;
+  }
+}
