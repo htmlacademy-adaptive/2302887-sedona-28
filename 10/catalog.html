@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фото и видео Седоны, Аризона, США</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="img/favicons/favicon.svg">
+    <link rel="icon" type="image/png" href="img/favicons/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="minifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <base href="https://htmlacademy-adaptive.github.io/2302887-sedona-28/10/">
 </head>
@@ -69,10 +72,10 @@
             <li class="views-list__item foto-module foto-module--first">
               <picture>
                 <source media="(min-width: 1200px)"
-                srcset="img/photo-1-desktop.jpg" width="1200" heght="400">
+                srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" width="1200" heght="400" >
                 <source media="(min-width: 768px)"
-                srcset="img/photo-1-tablet.jpg" width="648" heght="400">
-                <img class="foto-module__image foto-module__image--first" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Шоссе, вокруг чахлая растительность,на горизонте горы.">
+                srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" width="648" heght="400">
+                <img class="foto-module__image foto-module__image--first" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Шоссе, вокруг чахлая растительность,на горизонте горы.">
               </picture>
               <div class="foto-module__wrapper">
                 <div class="foto-module__title-wrapper">
@@ -87,10 +90,10 @@
             <li class="views-list__item foto-module">
               <picture>
                 <source media="(min-width: 1200px)"
-                srcset="img/photo-2-desktop.jpg" width="400" heght="267">
+                srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x" width="400" heght="267">
                 <source media="(min-width: 768px)"
-                srcset="img/photo-2-tablet.jpg" width="324" heght="267">
-              <img class="foto-module__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местный кактус цветёт на фоне красных скал.">
+                srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x" width="324" heght="267">
+              <img class="foto-module__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местный кактус цветёт на фоне красных скал.">
               </picture>
               <div class="foto-module__wrapper">
                 <div class="foto-module__title-wrapper">
@@ -105,10 +108,10 @@
             <li class="views-list__item foto-module">
               <picture>
                 <source media="(min-width: 1200px)"
-                srcset="img/photo-3-desktop.jpg" width="400" heght="267">
+                srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x" width="400" heght="267">
                 <source media="(min-width: 768px)"
-                srcset="img/photo-3-tablet.jpg" width="324" heght="267">
-              <img class="foto-module__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Вид на горный серпантин на лесистом склоне.">
+                srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x" width="324" heght="267">
+              <img class="foto-module__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Вид на горный серпантин на лесистом склоне.">
               </picture>
               <div class="foto-module__wrapper">
                 <div class="foto-module__title-wrapper">
@@ -123,10 +126,10 @@
             <li class="views-list__item foto-module">
               <picture>
                 <source media="(min-width: 1200px)"
-                srcset="img/photo-4-desktop.jpg" width="400" heght="267">
+                srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x" width="400" heght="267">
                 <source media="(min-width: 768px)"
-                srcset="img/photo-4-tablet.jpg" width="324" heght="267">
-              <img class="foto-module__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Вид на мост в окружении красных скал, на горизонте скалистая местность.">
+                srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x" width="324" heght="267">
+              <img class="foto-module__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Вид на мост в окружении красных скал, на горизонте скалистая местность.">
               </picture>
               <div class="foto-module__wrapper">
                 <div class="foto-module__title-wrapper">
@@ -151,10 +154,10 @@
             <a class="video__link" href="#">
               <picture>
                 <source media="(min-width: 1200px)"
-                srcset="img/prewiew-pc.jpg" width="800" heght="500">
+                srcset="img/preview-pc.jpg, img/preview-pc@2x.jpg 2x" width="800" heght="500">
                 <source media="(min-width: 768px)"
-                srcset="img/prewiew-tablet.jpg" width="648" heght="500">
-                <img class="video__prewiew" src="img/prewiew.jpg" width="280" height="177" alt="Дорога на Седону, вокруг красные скалы и чахлая зелень.">
+                srcset="img/preview-tablet.jpg 1x, img/preview-tablet@2x.jpg 2x" width="648" heght="500">
+                <img class="video__preview" src="img/preview.jpg" srcset="img/preview@2x.jpg 2x" width="280" height="177" alt="Дорога на Седону, вокруг красные скалы и чахлая зелень.">
               </picture>
             </a>
           </div>
@@ -166,7 +169,7 @@
     <footer class="footer">
       <h2 class="visually-hidden">Посетите Седону.</h2>
       <div class="footer__link-wrapper">
-        <a class="footer__visit-link" href="#">#VisitSedona</a>
+        <a class="footer__visit-link" href="https://en.wikipedia.org/wiki/Sedona,_Arizona">#VisitSedona</a>
       </div>
       <section class="footer__social">
         <h2 class="visually-hidden">htmlacademy в социальных сетях.</h2>
