@@ -1,5 +1,5 @@
 .nav__toggle {
-  displa: none;
+  display: none;
   width: 23px;
   height: 23px;
   margin: 17px 20px 17px auto;
@@ -7,22 +7,22 @@
   border: none;
   background-color: #ffffff;
   cursor: pointer;
-  z-index: 3;
 
-  &--burger {
-    background-image: url("../img/icon-menu.svg");
-    background-color: transparent;
-  }
-
-  &--cross {
-    background-image: url("../img/icon-cross.svg");
-    fill: #ffffff;
-    background-color: transparent;
-  }
-
-  &--hidden {
+  @media (min-width: 768px) {
     display: none;
   }
+}
+
+.nav__toggle-cross {
+  position: absolute;
+  displa: none;
+  width: 23px;
+  height: 23px;
+  margin: 17px 20px 17px auto;
+  background-image: url("../img/icon-cross.svg");
+  border: none;
+  background-color: #81b3d2;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     display: none;
@@ -32,7 +32,7 @@
 .nav {
   @media (max-width: 767px) {
     flex-flow: row-reverse;
-    background-colo: #81b3d2;
+    background-color: #81b3d2;
   }
 }
 
@@ -50,9 +50,10 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  z-index: 2;
 
   @media (max-width: 767px) {
-    display: none;
+    displa: none;
   }
 
   @media (min-width: 768px) {
