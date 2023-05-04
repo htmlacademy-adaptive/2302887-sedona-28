@@ -78,7 +78,7 @@ img {
   }
 }
 .nav__toggle {
-  displa: none;
+  display: none;
   width: 23px;
   height: 23px;
   margin: 17px 20px 17px auto;
@@ -86,29 +86,32 @@ img {
   border: none;
   background-color: #ffffff;
   cursor: pointer;
-  z-index: 3;
-}
-.nav__toggle--burger {
-  background-image: url("../img/icon-menu.svg");
-  background-color: transparent;
-}
-.nav__toggle--cross {
-  background-image: url("../img/icon-cross.svg");
-  fill: #ffffff;
-  background-color: transparent;
-}
-.nav__toggle--hidden {
-  display: none;
 }
 @media (min-width: 768px) {
   .nav__toggle {
     display: none;
   }
 }
+.nav__toggle-cross {
+  position: absolute;
+  displa: none;
+  width: 23px;
+  height: 23px;
+  margin: 17px 20px 17px auto;
+  background-image: url("../img/icon-cross.svg");
+  border: none;
+  background-color: #81b3d2;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .nav__toggle-cross {
+    display: none;
+  }
+}
 @media (max-width: 767px) {
   .nav {
     flex-flow: row-reverse;
-    background-colo: #81b3d2;
+    background-color: #81b3d2;
   }
 }
 .nav__wrapper {
@@ -124,10 +127,11 @@ img {
   text-decoration: none;
   margin: 0;
   padding: 0;
+  z-index: 2;
 }
 @media (max-width: 767px) {
   .nav-list {
-    display: none;
+    displa: none;
   }
 }
 @media (min-width: 768px) {
@@ -724,7 +728,6 @@ img {
   bottom: -1px;
   transform: translate(50%, 0);
   background: url("../img/divider.svg") no-repeat;
-  z-index: 1;
 }
 @media (min-width: 768px) {
   .hero-catalog::after {
@@ -768,21 +771,6 @@ img {
 @media (min-width: 768px) {
   .views__title-wrapper {
     width: 458px;
-  }
-}
-.views__title-wrapper::after {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  bottom: -25px;
-  width: 170%;
-  height: 1px;
-  content: "";
-  background-color: #e5e5e5;
-}
-@media (min-width: 768px) {
-  .views__title-wrapper::after {
-    height: 0;
   }
 }
 .views__title {
@@ -861,6 +849,21 @@ img {
 }
 @media (min-width: 768px) {
   .views-list__item::after {
+    height: 0;
+  }
+}
+.foto-module--first::before {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -24px;
+  width: 115%;
+  height: 1px;
+  content: "";
+  background-color: #e5e5e5;
+}
+@media (min-width: 768px) {
+  .foto-module--first::before {
     height: 0;
   }
 }
@@ -1227,6 +1230,20 @@ img {
   padding: 0;
   border: none;
 }
+@media (min-width: 768px) {
+  .form__fieldset--name {
+    margin: 0;
+    width: 92%;
+    justify-self: start;
+  }
+}
+@media (min-width: 768px) {
+  .form__fieldset--contacts {
+    margin: 0;
+    width: 92%;
+    justify-self: end;
+  }
+}
 .fieldset__title {
   position: relative;
   width: 100%;
@@ -1260,13 +1277,15 @@ img {
     display: none;
   }
 }
-.fieldset-text {
-  position: relative;
-  display: block;
-  width: 400px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  z-index: 1;
+@media (min-width: 768px) {
+  .fieldset-text {
+    position: relative;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    z-index: 1;
+  }
 }
 .fieldset__list {
   list-style: none;
@@ -1453,7 +1472,6 @@ img {
     left: 50%;
     transform: translate(-50%, 0);
     bottom: 12px;
-    min-width: 320px;
     width: 100%;
     height: 1px;
     content: "";
@@ -1469,9 +1487,9 @@ img {
   .form__fieldset--emoution {
     grid-column: 1/3;
     grid-row: 4/5;
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
   }
   .form__fieldset--send {
     grid-column: 1/3;
@@ -1482,20 +1500,6 @@ img {
     width: 100%;
     max-width: 768px;
     align-items: center;
-  }
-  .form__fieldset--contacts {
-    position: relative;
-  }
-  .form__fieldset--contacts::before {
-    position: absolute;
-    left: -56%;
-    transform: rotate(90deg);
-    top: 130px;
-    width: 300px;
-    width: 100%;
-    height: 1px;
-    content: "";
-    background-color: #dbdbdb;
   }
 }
 .feedbacks {
@@ -1546,10 +1550,17 @@ img {
 }
 @media (min-width: 768px) {
   .feedbacks__form {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto auto auto auto;
-    justify-items: end;
+  }
+  .feedbacks__form::before {
+    position: absolute;
+    border-right: 1px solid #dbdbdb;
+    content: "";
+    height: 390px;
+    left: 50%;
   }
 }
 .send__button-wrapper {
