@@ -1,19 +1,32 @@
 .hero-catalog {
   position: relative;
-  height: 156px;
-  background-image: url("../img/welcome-background.jpg");
+  height: 158px;
+  background-image: url("../img/welcome-background-catalog.jpg");
   background-size: cover;
   background-position: center;
   margin-bottom: 37px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/welcome-background-catalog@2x.jpg");
+  }
+
   @media (min-width: 768px) {
     height: 290px;
-    background-image: url("../img/welcome-background-tablet.jpg");
+    background-image: url("../img/welcome-background-catalog-tablet.jpg");
     margin-bottom: 64px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-background-catalog-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: 1200px) {
+    background-image: url("../img/welcome-background-catalog-pc.jpg");
     margin-bottom: 115px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-background-catalog-pc@2x.jpg");
+    }
   }
 }
 
