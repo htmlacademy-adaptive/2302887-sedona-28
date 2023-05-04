@@ -36,7 +36,7 @@
 .feedbacks__text {
   min-width: 284px;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 53px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -47,10 +47,17 @@
 
 @media (min-width: 768px) {
   .feedbacks__form {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 386px 210px 231px 262px 58px;
-    justify-items: end;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .feedbacks__form::before {
+    position: absolute;
+    border-right: 1px solid #dbdbdb;
+    content: "";
+    height: 390px;
+    left: 50%;
   }
 }
-
