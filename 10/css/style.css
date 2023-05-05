@@ -1466,6 +1466,9 @@ img {
     min-width: 224px;
   }
 }
+.fieldset__item--radio-checkbox {
+  margin-bottom: 36px;
+}
 .fieldset__wrapper {
   display: flex;
   flex-direction: column;
@@ -1535,9 +1538,6 @@ img {
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position-x: right;
-}
-.fieldset__item--radio-checkbox {
-  margin-bottom: 36px;
 }
 .fieldset__control {
   position: relative;
