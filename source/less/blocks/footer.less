@@ -35,6 +35,15 @@
   color: #333333;
 }
 
+.footer__visit-link:hover,
+.footer__visit-link:focus {
+  color: #756157;
+}
+
+.footer__visit-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .footer__social-list {
   display: flex;
   justify-content: center;
@@ -65,16 +74,38 @@
   }
 }
 
+.footer__website-wrapper:hover {
+  color: #81b3d2;
+}
+
 .footer__website-develop {
   padding-top: 7px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer__website-develop:active {
+  color: #b3b3b3;
 }
 
 .footer__website-link {
   width: 29px;
   height: 35px;
   margin-left: 12px;
+}
+
+.footer__website-logo {
+  fill: #000000;
+}
+
+.footer__website-wrapper:hover .footer__website-logo,
+.footer__website-logo:focus {
+  fill: #81b3d2;
+}
+
+.footer__website-wrapper:active .footer__website-logo {
+  fill: #b3b3b3;
 }

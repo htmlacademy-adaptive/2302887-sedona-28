@@ -142,7 +142,7 @@
   color: #000000;
   margin-bottom: 44px;
   padding: 12px 20px;
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   border: 0;
 
   @media (min-width: 768px) {
@@ -151,6 +151,15 @@
 
   @media (min-width: 1200px) {
     min-width: 430px;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
   }
 
   &--emotion {
@@ -203,6 +212,14 @@
   height: 46px;
   border-radius: 23px;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
 }
 
 .fieldset__control-input[type="radio"]:checked + .fieldset__control-mark-radio {
@@ -210,6 +227,10 @@
   background-image: url("../../img/dot.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .fieldset__span-radiocheck {
@@ -233,6 +254,14 @@
   height: 46px;
   border-radius: 3px;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+  }
 }
 
 .fieldset__control-input[type="checkbox"]:checked + .fieldset__control-mark-checkbox {
@@ -240,6 +269,10 @@
   background-image: url("../../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
