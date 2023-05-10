@@ -213,13 +213,19 @@
   border-radius: 23px;
   background-color: #f2f2f2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #e5e5e5;
   }
 
   &:active {
     background-color: #d5d5d5;
   }
+}
+
+.fieldset__control-input[type="radio"]:focus + .fieldset__control-mark-radio {
+  box-sizing: border-box;
+  outline: 2px solid #000000;
 }
 
 .fieldset__control-input[type="radio"]:checked + .fieldset__control-mark-radio {
@@ -246,6 +252,11 @@
   }
 }
 
+.fieldset__control-input[type="checkbox"]:focus + .fieldset__control-mark-checkbox {
+  box-sizing: border-box;
+  outline: 2px solid #000000;
+}
+
 .fieldset__control-mark-checkbox {
   position: absolute;
   top: -10px;
@@ -255,7 +266,8 @@
   border-radius: 3px;
   background-color: #f2f2f2;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #e5e5e5;
   }
 

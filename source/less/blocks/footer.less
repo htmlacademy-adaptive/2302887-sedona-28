@@ -1,28 +1,25 @@
 .footer {
   min-width: 320px;
-  min-height: 235px;
 
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 768px;
-    min-height: 120px;
+    margin: 0 60px;
+    padding: 36px 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 120px;
   }
 }
 
 .footer__link-wrapper {
   text-align: center;
-  padding-top: 33px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   @media (min-width: 768px) {
-    margin-left: 60px;
-    padding: 0;
-  }
-
-  @media (min-width: 1200px) {
-    margin-left: 120px;
+    margin: 0;
   }
 }
 
@@ -33,15 +30,15 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #333333;
-}
 
-.footer__visit-link:hover,
-.footer__visit-link:focus {
-  color: #756157;
-}
+  &:hover,
+  &:focus {
+    color: #756157;
+  }
 
-.footer__visit-link:active {
-  color: rgba(117, 97, 87, 0.3);
+  &:active {
+    color: rgba(117, 97, 87, 0.3);
+  }
 }
 
 .footer__social-list {
@@ -51,6 +48,7 @@
   list-style: none;
   padding: 0;
   gap: 6px;
+  margin: 0;
   margin-bottom: 30px;
 
   @media (min-width: 768px) {
@@ -58,54 +56,47 @@
   }
 }
 
-.footer__website-wrapper {
+.footer__website-link {
   display: flex;
-  width: 129px;
-  height: 35px;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 33px;
+  text-decoration: none;
+  cursor: pointer;
 
   @media (min-width: 768px) {
-    margin: 0;
-    margin-right: 60px;
+    padding: 0;
   }
-
-  @media (min-width: 1200px) {
-    margin-right: 120px;
-  }
-}
-
-.footer__website-wrapper:hover {
-  color: #81b3d2;
 }
 
 .footer__website-develop {
-  padding-top: 7px;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
 
-.footer__website-develop:active {
-  color: #b3b3b3;
-}
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+  }
 
-.footer__website-link {
-  width: 29px;
-  height: 35px;
-  margin-left: 12px;
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .footer__website-logo {
+  margin-left: 12px;
   fill: #000000;
-}
 
-.footer__website-wrapper:hover .footer__website-logo,
-.footer__website-logo:focus {
-  fill: #81b3d2;
-}
+  &:hover,
+  &:focus {
+    fill: #81b3d2;
+  }
 
-.footer__website-wrapper:active .footer__website-logo {
-  fill: #b3b3b3;
+  &:active {
+    fill: #b3b3b3;
+  }
 }
