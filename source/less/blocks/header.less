@@ -30,13 +30,13 @@
     background-color: #ffffff;
     z-index: 0;
   }
-}
 
-.header__nav--closed,
-.header__nav--opened {
-  @media (max-width: 767px) {
-    flex-flow: row-reverse;
-    background-color: #81b3d2;
+  &--closed,
+  &--opened {
+    @media (max-width: 767px) {
+      flex-flow: row-reverse;
+      background-color: #81b3d2;
+    }
   }
 }
 
@@ -102,8 +102,6 @@
     }
   }
 }
-
-
 
 .header__nav--closed .nav-list {
   @media (max-width: 767px) {
