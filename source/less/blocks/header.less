@@ -8,14 +8,15 @@
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 1;
-}
 
-.header__logo--hover:hover {
-  opacity: 70%;
-}
+  &--hover:hover,
+  &--hover:focus {
+    opacity: 70%;
+  }
 
-.header__logo--hover:active {
-  opacity: 50%;
+  &--hover:active {
+    opacity: 50%;
+  }
 }
 
 .header__nav {
