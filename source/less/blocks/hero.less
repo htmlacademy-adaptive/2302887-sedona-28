@@ -7,6 +7,10 @@
   background-color: #689481;
   margin-bottom: 32px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/welcome-background@2x.jpg");
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -24,6 +28,10 @@
     background-image: url("../img/welcome-background-tablet.jpg");
     margin-bottom: 48px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-background-tablet@2x.jpg");
+    }
+
     &::after {
       width: 768px;
       background: url("../img/divider-tablet.svg") no-repeat;
@@ -34,6 +42,10 @@
     min-height: 507px;
     background-image: url("../img/welcome-background-pc.jpg");
     margin-bottom: 59px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/welcome-background-pc@2x.jpg");
+    }
 
     &::after {
       width: 1200px;
