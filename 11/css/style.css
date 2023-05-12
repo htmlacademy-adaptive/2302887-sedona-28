@@ -53,9 +53,6 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.page__sprite {
-  display: none;
-}
 .header {
   min-height: 56px;
   position: relative;
