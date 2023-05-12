@@ -63,7 +63,8 @@ img {
   transform: translate(-50%, 0);
   z-index: 1;
 }
-.header__logo--hover:hover {
+.header__logo--hover:hover,
+.header__logo--hover:focus {
   opacity: 70%;
 }
 .header__logo--hover:active {
@@ -418,7 +419,6 @@ img {
     box-sizing: border-box;
     min-width: 256px;
     width: 33.33%;
-    min-height: 256px;
     padding: 52px 33px 31px;
   }
 }
@@ -809,6 +809,7 @@ img {
   align-items: center;
   padding-bottom: 33px;
   text-decoration: none;
+  color: #000000;
   cursor: pointer;
 }
 @media (min-width: 768px) {
@@ -816,31 +817,24 @@ img {
     padding: 0;
   }
 }
+.footer__website-link:hover,
+.footer__website-link:focus {
+  color: #81b3d2;
+}
+.footer__website-link:active {
+  color: #b3b3b3;
+}
 .footer__website-develop {
-  color: #000000;
+  color: currentColor;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
 }
-.footer__website-develop:hover,
-.footer__website-develop:focus {
-  color: #81b3d2;
-}
-.footer__website-develop:active {
-  color: #b3b3b3;
-}
 .footer__website-logo {
   margin-left: 12px;
-  fill: #000000;
-}
-.footer__website-logo:hover,
-.footer__website-logo:focus {
-  fill: #81b3d2;
-}
-.footer__website-logo:active {
-  fill: #b3b3b3;
+  fill: currentColor;
 }
 .social-list__button {
   display: flex;
@@ -1426,6 +1420,53 @@ img {
     justify-self: end;
   }
 }
+@media (min-width: 768px) {
+  .form__fieldset--impression {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .fieldset__title--impression {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .fieldset__title--impression::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 12px;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: #dbdbdb;
+  }
+  .form__fieldset--attractions {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .form__fieldset--emoution {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .form__fieldset--send {
+    grid-column: 1/3;
+    grid-row: 5/6;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 768px;
+    align-items: center;
+  }
+}
 .fieldset__title {
   position: relative;
   width: 100%;
@@ -1564,9 +1605,9 @@ img {
 .fieldset__field:hover {
   background-color: #e5e5e5;
 }
-.fieldset__field:active {
+.fieldset__field:focus {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
 }
 .fieldset__field--emotion {
   min-width: 280px;
@@ -1619,7 +1660,7 @@ img {
 }
 .fieldset__control-input[type="radio"]:focus + .fieldset__control-mark-radio {
   box-sizing: border-box;
-  outline: 2px solid #000000;
+  outline: 2px solid #d5d5d5;
 }
 .fieldset__control-input[type="radio"]:checked + .fieldset__control-mark-radio {
   position: absolute;
@@ -1645,7 +1686,7 @@ img {
 }
 .fieldset__control-input[type="checkbox"]:focus + .fieldset__control-mark-checkbox {
   box-sizing: border-box;
-  outline: 2px solid #000000;
+  outline: 2px solid #d5d5d5;
 }
 .fieldset__control-mark-checkbox {
   position: absolute;
@@ -1671,53 +1712,6 @@ img {
 }
 .fieldset__control-input[type="checkbox"]:checked + .fieldset__control-mark-checkbox:active {
   opacity: 0.3;
-}
-@media (min-width: 768px) {
-  .form__fieldset--impression {
-    grid-column: 1/3;
-    grid-row: 2/3;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .fieldset__title--impression {
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-  .fieldset__title--impression::after {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 12px;
-    width: 100%;
-    height: 1px;
-    content: "";
-    background-color: #dbdbdb;
-  }
-  .form__fieldset--attractions {
-    grid-column: 1/3;
-    grid-row: 3/4;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  .form__fieldset--emoution {
-    grid-column: 1/3;
-    grid-row: 4/5;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .form__fieldset--send {
-    grid-column: 1/3;
-    grid-row: 5/6;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 768px;
-    align-items: center;
-  }
 }
 .feedbacks {
   min-width: 280px;
