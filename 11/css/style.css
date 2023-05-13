@@ -456,6 +456,7 @@ img {
 }
 .advantages-item__title--other {
   padding: 0 35px;
+  margin-bottom: 15px;
 }
 @media (min-width: 875px) {
   .advantages-item__title--other {
@@ -473,9 +474,15 @@ img {
   }
 }
 .advantages-item__span {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+@media (min-width: 768px) {
+  .advantages-item__span {
+    margin-bottom: 20px;
+  }
 }
 .advantages-item__text {
   margin: 0;
@@ -487,7 +494,6 @@ img {
 }
 @media (min-width: 768px) {
   .advantages-item__text {
-    margin-top: 20px;
     padding: 0;
   }
 }
