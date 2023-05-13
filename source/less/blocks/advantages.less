@@ -132,6 +132,7 @@
 
   &--other {
     padding: 0 35px;
+    margin-bottom: 15px;
 
     @media (min-width: 875px) {
       padding: 0 55px;
@@ -148,9 +149,14 @@
 }
 
 .advantages-item__span {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .advantages-item__text {
@@ -162,7 +168,6 @@
   text-transform: uppercase;
 
   @media (min-width: 768px) {
-    margin-top: 20px;
     padding: 0;
   }
 }
