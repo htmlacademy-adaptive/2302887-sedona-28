@@ -1,5 +1,13 @@
 .advantages {
-  margin-bottom: 42px;
+  margin-bottom: 26px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 43px;
+  }
 }
 
 .advantages__title {
@@ -16,11 +24,15 @@
     font-size: 21px;
     margin-bottom: 31px;
   }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 28px;
+  }
 }
 
 .advantages__text {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 37px;
   padding: 0 18px;
   font-weight: 400;
   font-size: 14px;
@@ -34,7 +46,7 @@
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 44px;
+    margin-bottom: 46px;
   }
 }
 
@@ -123,7 +135,7 @@
 
 .advantages-item__title {
   margin: 0;
-  padding: 54px 25px 11px 25px;
+  padding: 49px 25px 11px 25px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -145,7 +157,11 @@
 
   &--other {
     padding: 0 35px;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 14px;
+    }
 
     @media (min-width: 875px) {
       padding: 0 55px;
@@ -158,6 +174,14 @@
     @media (min-width: 1115px) {
       padding: 0 95px;
     }
+  }
+}
+
+.advantages-item__title--bridge {
+  padding-top: 37px;
+
+  @media (min-width: 768px) {
+    padding-top: 0;
   }
 }
 
@@ -174,7 +198,7 @@
 
 .advantages-item__text {
   margin: 0;
-  padding: 17px 40px 25px;
+  padding: 19px 40px 38px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -187,6 +211,26 @@
   @media (min-width: 1200px) {
     padding: 0 10px;
   }
+}
+
+.advantages-item__text--bridge {
+  padding-top: 17px;
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+  }
+}
+
+.advantages-item__text--square {
+  padding-bottom: 23px;
+}
+
+.advantages-item__text--road {
+  padding-bottom: 25px;
+}
+
+.advantages-item__text--tourists {
+  padding-bottom: 27px;
 }
 
 .advantages-item__features {
@@ -203,7 +247,6 @@
 
 .advantages-list__item--other-line {
   position: relative;
-  min-height: 168px;
   padding-top: 24px;
   text-align: center;
   background-color: #eeeeee;
@@ -231,7 +274,6 @@
 }
 
 .advantages-list__item--other {
-  min-height: 168px;
   padding-top: 24px;
   text-align: center;
   background-color: #eeeeee;

@@ -3,8 +3,8 @@
   height: 158px;
   background-image: url("../img/welcome-background-catalog.jpg");
   background-size: cover;
-  background-position: center;
-  margin-bottom: 37px;
+  background-position: 0 -56px;
+  margin-bottom: 38px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/welcome-background-catalog@2x.jpg");
@@ -54,12 +54,15 @@
   }
 }
 
-.hero__title {
+.hero-catalog__title {
+  position: absolute;
+  right: 50.3%;
+  top: 45%;
+  transform: translate(50%, -50%);
+
   @media (min-width: 768px) {
-    position: absolute;
     right: 50%;
     top: 46%;
-    transform: translate(50%, -50%);
   }
 
   @media (min-width: 1200px) {
