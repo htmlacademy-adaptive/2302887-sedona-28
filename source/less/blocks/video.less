@@ -60,6 +60,7 @@
 }
 
 .video__link-wrapper {
+  position: relative;
   min-width: 280px;
   margin: 0 auto;
 }
@@ -73,5 +74,21 @@
 
   @media (min-width: 1200px) {
     width: 800px;
+  }
+}
+
+.video__play {
+  position: absolute;
+  top: 34%;
+  right: 41%;
+
+  @media (min-width: 768px) {
+    top: 44%;
+    right: 46%;
+  }
+
+  @media (min-width: 1200px) {
+    top: 44%;
+    right: 48%;
   }
 }
