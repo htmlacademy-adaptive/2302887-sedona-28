@@ -1418,6 +1418,7 @@ img {
   }
 }
 .video__link-wrapper {
+  position: relative;
   min-width: 280px;
   margin: 0 auto;
 }
@@ -1432,6 +1433,23 @@ img {
 @media (min-width: 1200px) {
   .video__preview {
     width: 800px;
+  }
+}
+.video__play {
+  position: absolute;
+  top: 34%;
+  right: 41%;
+}
+@media (min-width: 768px) {
+  .video__play {
+    top: 44%;
+    right: 46%;
+  }
+}
+@media (min-width: 1200px) {
+  .video__play {
+    top: 44%;
+    right: 48%;
   }
 }
 .modal-error {
