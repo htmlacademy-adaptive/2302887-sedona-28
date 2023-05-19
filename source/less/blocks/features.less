@@ -1,13 +1,24 @@
+.features-list {
+  margin-bottom: 44px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+}
+
 .features-list__item {
-  margin-top: 10px;
-  margin-bottom: 58px;
-  padding-left: 58px;
+  padding-top: 33px;
+  padding-left: 48px;
 
   @media (min-width: 768px) {
     box-sizing: border-box;
     width: 33.33%;
     margin: 0;
     padding: 64px 33px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 68px 33px 58px;
   }
 
   @media (min-width: 1200px) {
@@ -17,39 +28,57 @@
   &--house {
     background-image: url("../img/icon-house.svg");
     background-repeat: no-repeat;
-    background-position: 13px 0;
+    background-position: 18px 23px;
 
     @media (min-width: 768px) {
       background-image: url("../img/icon-house-tablet.svg");
-      background-position: center 69px;
+      background-position: center 61px;
+    }
+
+    @media (min-width: 1200px) {
+      background-image: url("../img/icon-house-tablet.svg");
+      background-position: 160px 69px;
     }
   }
 
   &--food {
     background-image: url("../img/icon-burger.svg");
     background-repeat: no-repeat;
-    background-position: 13px 0;
+    background-position: 18px 23px;
 
     @media (min-width: 768px) {
       background-image: url("../img/icon-burger-tablet.svg");
-      background-position: center 69px;
+      background-position: center 61px;
+      padding: 61px 52px;
+    }
+
+    @media (min-width: 1200px) {
+      background-image: url("../img/icon-burger-tablet.svg");
+      background-position: 157px 72px;
     }
   }
 
   &--souvenirs {
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
-    background-position: 13px 0;
+    background-position: 18px 23px;
 
     @media (min-width: 768px) {
       background-image: url("../img/icon-gift-tablet.svg");
-      background-position: center 69px;
+      background-position: center 63px;
+      padding: 61px 33px;
+    }
+
+    @media (min-width: 1200px) {
+      background-image: url("../img/icon-gift-tablet.svg");
+      background-position: 165px 69px;
+      padding: 69px 90px;
     }
   }
 }
 
 .features-list__title {
-  margin-top: 8px;
+  margin: 0;
   margin-bottom: 16px;
   padding: 0 18px;
   font-weight: 700;
@@ -58,20 +87,20 @@
   text-transform: uppercase;
 
   @media (min-width: 768px) {
-    margin-top: 89px;
+    padding-top: 90px;
     margin-bottom: 25px;
-    padding: 0;
     font-size: 21px;
     text-align: center;
   }
 
   @media (min-width: 1200px) {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 }
 
 .features-list__text {
   margin: 0;
+  padding-left: 17px;
   padding-right: 18px;
   font-weight: 400;
   font-size: 14px;

@@ -9,8 +9,8 @@
     <link rel="icon" type="image/png" href="img/favicons/favicon.png">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="minifest.webmanifest">
-    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -57,26 +57,27 @@
         <picture>
           <source media="(min-width: 768px)"
             srcset="img/sedona-tablet.svg" width="457" heght="78">
-          <img class="hero__title" src="img/sedona.svg" width="229" height="39" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
+          <img class="hero-catalog__title" src="img/sedona.svg" width="229" height="39" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
         </picture>
       </section>
       <section class="views">
         <div class="views__wrapper">
           <div class="views__title-wrapper">
             <h2 class="views__title">Фото и видео</h2>
-            <p class="views__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            <p class="views__text">Не можете решиться на путешествие из-за курса? Фотографии&nbspпомогут вам забыть о политике и экономике.</p>
           </div>
           <ul class="views__list views-list">
             <li class="views-list__item foto-module foto-module--first">
               <picture>
-                <source media="(min-width: 1200px)"
-                srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" width="1200" heght="400" >
-                <source media="(min-width: 768px)"
-                srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" width="648" heght="400">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x" width="1200" heght="400" >
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x" width="648" heght="400">
                 <img class="foto-module__image foto-module__image--first" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Шоссе, вокруг чахлая растительность,на горизонте горы.">
               </picture>
               <div class="foto-module__wrapper">
-                <div class="foto-module__title-wrapper">
+                <div class="foto-module__title-wrapper foto-module__title-wrapper--first">
                   <h3 class="foto-module__title">Неродные просторы</h3>
                   <p class="foto-module__text">Автор фото: борис</p>
                 </div>
@@ -144,19 +145,19 @@
       </section>
       <section class="video">
         <div class="video__wrapper">
-
-          <h2 class="video__title">Всё ещё сомневаетесь?</h2>
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-
           <div class="video__link-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)"
+              srcset="img/preview-pc.jpg, img/preview-pc@2x.jpg 2x" width="800" heght="500">
+              <source media="(min-width: 768px)"
+              srcset="img/preview-tablet.jpg 1x, img/preview-tablet@2x.jpg 2x" width="648" heght="500">
+              <img class="video__preview" src="img/preview.jpg" srcset="img/preview@2x.jpg 2x" width="280" height="177" alt="Дорога на Седону, вокруг красные скалы и чахлая зелень.">
+            </picture>
             <a class="video__link" href="#">
-              <picture>
-                <source media="(min-width: 1200px)"
-                srcset="img/preview-pc.jpg, img/preview-pc@2x.jpg 2x" width="800" heght="500">
-                <source media="(min-width: 768px)"
-                srcset="img/preview-tablet.jpg 1x, img/preview-tablet@2x.jpg 2x" width="648" heght="500">
-                <img class="video__preview" src="img/preview.jpg" srcset="img/preview@2x.jpg 2x" width="280" height="177" alt="Дорога на Седону, вокруг красные скалы и чахлая зелень.">
-              </picture>
+              <span class="visually-hidden">Запустить видеопрезентацию Седоны.</span>
+              <img class="video__play" src="img/play_video.png" width="48" height="54" alt="Кнопка Play">
             </a>
           </div>
         </div>
@@ -166,54 +167,46 @@
 
     <footer class="footer">
       <h2 class="visually-hidden">Посетите Седону.</h2>
-      <div class="footer__link-wrapper">
-        <a class="footer__visit-link" href="https://en.wikipedia.org/wiki/Sedona,_Arizona">#VisitSedona</a>
-      </div>
+          <div class="footer__link-wrapper">
+            <a class="footer__visit-link" href="https://en.wikipedia.org/wiki/Sedona,_Arizona">#VisitSedona</a>
+          </div>
       <section class="footer__social">
         <h2 class="visually-hidden">htmlacademy в социальных сетях.</h2>
         <ul class="footer__social-list social-list">
           <li class="social-list__item">
-          <a class="social-list__button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">htmlacademy В Контакте.</span>
-            <svg class="social-list__icon" aria-hidden="true" focusable="false" fill="none" width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" >
-              <path d="M0 0h48v48H0z"/><g clip-path="url(#a)"><path fill="#fff" fill-rule="evenodd" d="M35.5 18c.1-.6 0-1-.8-1H32c-.6 0-1 .3-1.1.7 0 0-1.3 3.2-3.2
-              5.3-.7.6-1 .8-1.3.8-.1 0-.4-.2-.4-.7v-5.2c0-.6-.2-.9-.7-.9h-4.1c-.5 0-.7.3-.7.6 0 .6 1 .8 1 2.5V24c0 .8-.1 1-.5 1-.9 0-3-3.2-4.3-6.9-.3-.7-.5-1-1.2-1H13c-.8 0-.9.3-.9.7 0
-              .7.9 4.1 4.1 8.6 2.2 3 5.3 4.7 8 4.7 1.7 0 2-.4 2-1v-2.3c0-.8 0-.9.6-.9.4 0 1 .2 2.6 1.7 1.8 1.7 2.1 2.5 3.1 2.5H35c.8 0 1.2-.4 1-1.1-.3-.7-1.1-1.8-2.3-3L32
-              25c-.4-.5-.3-.7 0-1.1 0 0 3.2-4.4 3.5-6Z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#fff" d="M12 12h24v24H12z"/></clipPath></defs>
-            </svg>
-          </a>
+            <a class="social-list__button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">htmlacademy В Контакте.</span>
+              <svg class="social-list__icon" aria-hidden="true" focusable="false" fill="none" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#vk-icon"></use>
+              </svg>
+            </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">htmlacademy Тelegram.</span>
-              <svg class="social-list__icon" aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h48v48H0z"/><path fill="#fff" d="m34.4 16.6-3.1 15c-.3 1-.9 1.3-1.8.8l-4.8-3.6-2.3 2.3c-.3.2-.5.4-1
-                .4l.3-4.9 9-8c.4-.4-.1-.6-.6-.3l-11 7-4.8-1.5c-1-.3-1-1 .2-1.5L33 15c.9-.3 1.6.2 1.3 1.5Z"/>
+              <svg class="social-list__icon" aria-hidden="true" focusable="false" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#tg-icon"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">htmlacademy You tube.</span>
-              <svg class="social-list__icon" aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h48v48H0z"/><path fill="#fff" d="M31.2 17H16.8a2.9 2.9 0 0 0-2.8 2.8v8.3c0
-                1.6 1.3 2.9 2.8 2.9h14.4c1.6 0 2.8-1.3 2.8-2.8v-8.4c0-1.5-1.2-2.8-2.8-2.8ZM21 27.4v-6.8L28 24 21 27.4Z"/>
+              <svg class="social-list__icon" aria-hidden="true" focusable="false" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#youtube-icon"></use>
               </svg>
             </a>
           </li>
         </ul>
       </section>
-
       <a class="footer__website-link" href="https://htmlacademy.ru">
         <span class="footer__website-develop">Разработано</span>
-        <svg class="footer__website-logo" role="img" aria-label="Логотип-ссылка htmlacademy." xmlns="http://www.w3.org/2000/svg" width="29" height="35" fill="none" viewBox="0 0 29 35">
-          <path d="M14.7.4h-.1L1 1.8v24.8l13.5 8 13.3-8V1.8L14.8.4ZM26 12.6 14.5 5.7l-.2-.2v.1L3 12.6v-9l11.4-1.3 11.7 1.2v9ZM14.4 7.2 26 14l-4.4 2.7-7.2-4.3v1.4l6
-          3.6-1 .4-5-3v1.4l3.8 2.3-.8.6-3-1.9v1.4l2 1.1-1.9 1.1-11.3-6.6 11.3-6.9ZM3 15.6l11.4 6.8v1l-7.9-4.8V20l8 4.9v1l-8-4.6v1.3l8 4.8 8.2-4.8v-5.3l3.3-2v10l-11.4 7-11.6-6.8v-10Z"/>
+        <svg class="footer__website-logo" role="img" aria-label="Логотип-ссылка htmlacademy." xmlns="http://www.w3.org/2000/svg" width="29" height="35" fill="none">
+          <use href="./img/sprite.svg#academy-logo"></use>
         </svg>
       </a>
-
     </footer>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/nav.js"></script>
   </body>
 </html>

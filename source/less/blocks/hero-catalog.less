@@ -3,8 +3,8 @@
   height: 158px;
   background-image: url("../img/welcome-background-catalog.jpg");
   background-size: cover;
-  background-position: center;
-  margin-bottom: 37px;
+  background-position: 0 -56px;
+  margin-bottom: 38px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/welcome-background-catalog@2x.jpg");
@@ -13,7 +13,8 @@
   @media (min-width: 768px) {
     height: 290px;
     background-image: url("../img/welcome-background-catalog-tablet.jpg");
-    margin-bottom: 64px;
+    background-position: 0 -56px;
+    margin-bottom: 66px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/welcome-background-catalog-tablet@2x.jpg");
@@ -21,8 +22,10 @@
   }
 
   @media (min-width: 1200px) {
+    height: 300px;
     background-image: url("../img/welcome-background-catalog-pc.jpg");
-    margin-bottom: 115px;
+    background-position: 0 -56px;
+    margin-bottom: 100px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/welcome-background-catalog-pc@2x.jpg");
@@ -48,5 +51,22 @@
   @media (min-width: 1200px) {
     width: 1200px;
     background: url("../img/divider-pc.svg") no-repeat;
+  }
+}
+
+.hero-catalog__title {
+  position: absolute;
+  right: 50.3%;
+  top: 45%;
+  transform: translate(50%, -50%);
+
+  @media (min-width: 768px) {
+    right: 50%;
+    top: 46%;
+  }
+
+  @media (min-width: 1200px) {
+    right: 50.2%;
+    top: 47.1%;
   }
 }

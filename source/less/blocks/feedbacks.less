@@ -1,11 +1,15 @@
 .feedbacks {
   min-width: 280px;
+  margin-bottom: 56px;
+
+  @media (min-width: 1200px) {
+    padding-top: 15px;
+  }
 }
 
 .feedbacks__wrapper {
   min-width: 280px;
-  margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 
   @media (min-width: 768px) {
     margin-bottom: 64px;
@@ -19,9 +23,9 @@
 }
 
 .feedbacks__title {
-  min-width: 284px;
+  min-width: 280px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
@@ -29,20 +33,35 @@
   text-transform: uppercase;
 
   @media (min-width: 768px) {
+    margin-bottom: 19px;
     font-size: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 33px;
   }
 }
 
 .feedbacks__text {
-  min-width: 284px;
+  min-width: 280px;
   margin: 0;
-  margin-bottom: 53px;
+  margin-bottom: 51px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+
+  @media (min-width: 768px) {
+    padding: 0 105px;
+    margin-bottom: 107px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 260px;
+    margin-bottom: 68px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -57,7 +76,7 @@
     position: absolute;
     border-right: 1px solid #dbdbdb;
     content: "";
-    height: 390px;
+    height: 330px;
     left: 50%;
   }
 }

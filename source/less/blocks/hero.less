@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   background-color: #689481;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/welcome-background@2x.jpg");
@@ -20,6 +20,7 @@
     bottom: -1px;
     transform: translate(50%, 0);
     background: url("../img/divider.svg") no-repeat;
+    background-size: 100% 57px;
     z-index: 1;
   }
 
@@ -39,9 +40,9 @@
   }
 
   @media (min-width: 1200px) {
-    min-height: 507px;
+    min-height: 517px;
     background-image: url("../img/welcome-background-pc.jpg");
-    margin-bottom: 59px;
+    margin-bottom: 61px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/welcome-background-pc@2x.jpg");
@@ -58,6 +59,10 @@
 .hero__title {
   position: absolute;
   right: 50%;
-  top: 50%;
+  top: 51%;
   transform: translate(50%, -50%);
+
+  @media (min-width: 768px) {
+    top: 48.7%;
+  }
 }

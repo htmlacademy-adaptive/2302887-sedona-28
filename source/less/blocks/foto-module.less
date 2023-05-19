@@ -1,6 +1,5 @@
 .foto-module__image {
-  width: 767px;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 
   @media (min-width: 768px) {
     margin: 0;
@@ -19,6 +18,15 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding-top: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 1px;
+    padding-top: 1px;
+  }
 }
 
 .foto-module__text {
@@ -37,17 +45,18 @@
 
 .foto-module__wrapper {
   width: 100%;
-  height: 80px;
 
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 74px;
   }
 
   @media (min-width: 1200px) {
     position: absolute;
     bottom: 0;
+    height: 80px;
     background: rgba(0, 0, 0, 0.3);
     color: #ffffff;
   }
@@ -63,6 +72,14 @@
   text-transform: uppercase;
   color: #333333;
 
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    background-position: 10px -1px;
+  }
+
   @media (min-width: 1200px) {
     background: url("../img/like-icon-white.svg") no-repeat;
     background-position: 115px 0;
@@ -71,9 +88,11 @@
 }
 
 .foto-module__likes-value {
-  margin-left: 37px;
+  margin-left: 31px;
+  padding-top: 7px;
   background: none;
   border: none;
+  font-family: "PT Sans", sans-serif, "Arial";
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
@@ -88,13 +107,32 @@
   }
 }
 
+.foto-module__image--first {
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .foto-module--first {
     width: 100%;
   }
+}
 
-  .foto-module__image--first {
-    width: 100%;
+.foto-module__title-wrapper {
+  @media (min-width: 768px) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 24px;
+    padding-top: 2px;
+  }
+}
+
+.foto-module__title-wrapper--first {
+  @media (min-width: 1200px) {
+    margin-left: 20px;
   }
 }
 
@@ -106,8 +144,19 @@
   .likes-first {
     background-position: 930px 0;
   }
+}
 
-  .foto-module__title-wrapper {
-    margin-left: 21px;
+.foto-module--first::before {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -25px;
+  width: 115%;
+  height: 1px;
+  content: "";
+  background-color: #e5e5e5;
+
+  @media (min-width: 768px) {
+    height: 0;
   }
 }
