@@ -7,11 +7,6 @@ import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
-import terser  from 'gulp-terser';
-import squoosh from 'gulp-libsquoosh';
-import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
-import del from 'del';
 
 // Styles
 
@@ -34,22 +29,6 @@ export const html = () => {
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
-
-//Scripts
-export const script  = () => {
-  return gulp.src('sourse/js/*.js')
-    .pipe(terser())
-    .pipe(gulp.dest('build/js'))
-}
-
-
-//Images
-
-
-//WebP
-
-
-//SVG
 
 // Server
 
@@ -74,5 +53,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  html, styles, server, watcher
+  html,styles, server, watcher
 );
