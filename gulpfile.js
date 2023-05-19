@@ -36,6 +36,11 @@ export const html = () => {
 }
 
 //Scripts
+export const script  = () => {
+  return gulp.src('sourse/js/*.js')
+    .pipe(terser())
+    .pipe(gulp.dest('build/js'))
+}
 
 
 //Images
