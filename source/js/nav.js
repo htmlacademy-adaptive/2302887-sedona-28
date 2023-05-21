@@ -3,6 +3,7 @@ let navToggle = document.querySelector('.nav__toggle');
 
 navHeader.classList.add('header__nav--closed');
 navHeader.classList.remove('header__nav--opened');
+navToggle.classList.remove('nav__toggle--off');
 
 navToggle.onclick = function () {
   navHeader.classList.toggle('header__nav--opened');
