@@ -16,7 +16,7 @@ import {deleteAsync} from 'del';
 
 // Styles
 
-const styles = () => {
+export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
@@ -70,7 +70,7 @@ const createWebp = () => {
 
   // SVG
 
-export const svg = () =>
+const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
@@ -82,7 +82,7 @@ const sprite = () => {
   inlineSvg: true
   }))
   .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'));
+  .pipe(gulp.dest('build/img/icons'));
 }
 
   // Copy
@@ -132,7 +132,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
@@ -164,7 +164,7 @@ export default gulp.series(
   svg,
   sprite,
   createWebp
-  ),
+ ),
   gulp.series(
   server,
   watcher

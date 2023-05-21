@@ -63,6 +63,7 @@
 }
 
 .foto-module__likes {
+  display: flex;
   background: url("../img/like-icon.svg") no-repeat;
   background-position: 0 0;
   text-decoration: none;
@@ -113,8 +114,8 @@
   }
 }
 
-@media (min-width: 768px) {
-  .foto-module--first {
+.foto-module--first {
+  @media (min-width: 768px) {
     width: 100%;
   }
 }
@@ -136,15 +137,18 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .foto-module__likes-value--first {
-    margin-left: 957px;
-  }
-
-  .likes-first {
+.likes-first {
+  @media (min-width: 1200px) {
     background-position: 930px 0;
   }
 }
+
+.foto-module__likes-value--first {
+  @media (min-width: 1200px) {
+    margin-left: 957px;
+  }
+}
+
 
 .foto-module--first::before {
   position: absolute;
