@@ -68,6 +68,12 @@
   box-shadow: 0 9px 0 0 fade(#81b3d2, 30%), 0 18px 0 0 fade(#81b3d2, 30%);
 }
 
+.nav__toggle--off {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
 .header__nav--opened .nav__toggle {
   @media (max-width: 767px) {
     position: absolute;

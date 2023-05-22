@@ -75,16 +75,15 @@
 
 .video__play {
   position: absolute;
-  top: 34%;
-  right: 41%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-  @media (min-width: 768px) {
-    top: 44%;
-    right: 46%;
+  &:hover {
+    opacity: 0.8;
   }
 
-  @media (min-width: 1200px) {
-    top: 44%;
-    right: 48%;
+  &:active {
+    opacity: 0.5;
   }
 }
