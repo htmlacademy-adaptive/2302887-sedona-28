@@ -164,7 +164,7 @@ export default gulp.series(
   svg,
   sprite,
   createWebp
- ),
+  ),
   gulp.series(
   server,
   watcher
