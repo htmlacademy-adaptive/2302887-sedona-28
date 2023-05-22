@@ -1,5 +1,5 @@
 .video {
-  margin-bottom: 28px;
+  margin-bottom: 8px;
 
   @media (min-width: 768px) {
     margin-bottom: 34px;
@@ -73,11 +73,24 @@
   }
 }
 
+.video__button {
+  border: none;
+  background: none;
+}
+
 .video__play {
   position: absolute;
-  top: 50%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: 768px) {
+    top: 47.5%;
+  }
+
+  @media (min-width: 1200px) {
+    top: 50%;
+  }
 
   &:hover {
     opacity: 0.8;
