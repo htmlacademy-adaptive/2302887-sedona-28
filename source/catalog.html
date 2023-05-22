@@ -21,7 +21,7 @@
         <img class="header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="header__nav nav header__nav--opened header__nav--nojs">
-        <button class="nav__toggle" type="button">
+        <button class="nav__toggle nav__toggle--off" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="nav__wrapper">
@@ -81,9 +81,10 @@
                   <h3 class="foto-module__title">Неродные просторы</h3>
                   <p class="foto-module__text">Автор фото: борис</p>
                 </div>
-                <div class="foto-module__likes likes-first">
-                  <button class="foto-module__likes-value foto-module__likes-value--first" type="submit">1350</button>
-                </div>
+                <button class="foto-module__likes-value foto-module__likes-value--first" type="button">
+                  <span class="visually-hidden">Количество лайков.</span>
+                  <span>1350</span>
+                </button>
               </div>
             </li>
             <li class="views-list__item foto-module">
@@ -99,9 +100,10 @@
                   <h3 class="foto-module__title">Местная растительность</h3>
                   <p class="foto-module__text">Автор фото: Сергей</p>
                 </div>
-                <div class="foto-module__likes">
-                  <button class="foto-module__likes-value" type="submit">145</button>
-                </div>
+                <button class="foto-module__likes-value" type="button">
+                  <span class="visually-hidden">Количество лайков.</span>
+                  <span>143</span>
+                </button>
               </div>
             </li>
             <li class="views-list__item foto-module">
@@ -117,9 +119,10 @@
                   <h3 class="foto-module__title">Дорога на север</h3>
                   <p class="foto-module__text">Автор фото: Пётр</p>
                 </div>
-                <div class="foto-module__likes" href="#">
-                  <button class="foto-module__likes-value" type="submit">96</button>
-                </div>
+                <button class="foto-module__likes-value" type="button">
+                  <span class="visually-hidden">Количество лайков.</span>
+                  <span>96</span>
+                </button>
               </div>
             </li>
             <li class="views-list__item foto-module">
@@ -135,9 +138,10 @@
                   <h3 class="foto-module__title">Мост дьявола</h3>
                   <p class="foto-module__text">Автор фото: Антон</p>
                 </div>
-                <div class="foto-module__likes">
-                  <button class="foto-module__likes-value" type="submit">254</button>
-                </div>
+                <button class="foto-module__likes-value" type="button">
+                  <span class="visually-hidden">Количество лайков.</span>
+                  <span>254</span>
+                </button>
               </div>
             </li>
           </ul>
@@ -177,7 +181,7 @@
             <a class="social-list__button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">htmlacademy В Контакте.</span>
               <svg class="social-list__icon" aria-hidden="true" focusable="false" fill="none" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
-                <use href="./img/sprite.svg#vk-icon"></use>
+                <use href="img/icons/sprite.svg#social-vk"></use>
               </svg>
             </a>
           </li>
@@ -185,7 +189,7 @@
             <a class="social-list__button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">htmlacademy Тelegram.</span>
               <svg class="social-list__icon" aria-hidden="true" focusable="false" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="./img/sprite.svg#tg-icon"></use>
+                <use href="img/icons/sprite.svg#social-tg"></use>
               </svg>
             </a>
           </li>
@@ -193,7 +197,7 @@
             <a class="social-list__button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">htmlacademy You tube.</span>
               <svg class="social-list__icon" aria-hidden="true" focusable="false" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use href="./img/sprite.svg#youtube-icon"></use>
+                <use href="img/icons/sprite.svg#social-youtube"></use>
               </svg>
             </a>
           </li>
@@ -202,7 +206,7 @@
       <a class="footer__website-link" href="https://htmlacademy.ru">
         <span class="footer__website-develop">Разработано</span>
         <svg class="footer__website-logo" role="img" aria-label="Логотип-ссылка htmlacademy." xmlns="http://www.w3.org/2000/svg" width="29" height="35" fill="none">
-          <use href="./img/sprite.svg#academy-logo"></use>
+          <use href="img/icons/sprite.svg#logo-html"></use>
         </svg>
       </a>
     </footer>
