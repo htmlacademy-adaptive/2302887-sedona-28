@@ -11,7 +11,7 @@
   min-height: 58px;
   margin-bottom: 1px;
   padding: 8px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -53,8 +53,11 @@
 
 .send__text-wrapper {
   width: 100%;
-  padding-top: 8px;
   text-align: right;
+
+  @media (min-width: 768px) {
+    padding-top: 8px;
+  }
 }
 
 .send__text {
